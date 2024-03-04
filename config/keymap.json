@@ -14,11 +14,11 @@
          "&none",  "&kp X",  "&kp K",  "&kp J",  "&kp G",  "&kp W",                                         "&none",                      "&none",                           "&kp B",  "&kp H", "&kp PERIOD", "&kp COMMA", "&kp QUESTION",      "&none",
          "&none",  "&none",  "&none",  "&none",  "&none",                     "&lt 1 SPACE", "&kp LSHIFT",  "&none",                      "&none", "&kp LCTRL", "&kp BSPC",            "&none",      "&none",     "&none",        "&none",      "&none"
     ], [
-        "&none",        "&none",         "&none",      "&none",     "&none",  "&none",           "&trans",                                                                  "&none",          "&none",     "&none",     "&none",     "&none",  "&none",  "&none",
-        "&none",        "&none",         "&none",      "&none",     "&none",  "&none",            "&none",                                                                  "&none",       "&kp HOME", "&kp PG_DN", "&kp PG_UP",   "&kp END",  "&none",  "&none",
-        "&none", "&kp LEFT_ALT", "&kp LEFT_META", "&kp LSHIFT", "&kp LCTRL",  "&none",            "&none",  "&none",  "&none",                      "&none",   "&none",     "&none", "&kp LEFT_ARROW",  "&kp DOWN",    "&kp UP", "&kp RIGHT",  "&none",  "&none",
-        "&none",        "&none",         "&none",      "&none",     "&none",  "&none",                                "&none",                      "&none",                                  "&none",     "&none",     "&none",     "&none",  "&none",  "&none",
-        "&none",        "&none",         "&none",      "&none",     "&none",                      "&none",  "&none",  "&none",                      "&none", "&kp TAB", "&kp ENTER",                       "&none",     "&none",     "&none",  "&none",  "&none"
+        "&none",        "&none",         "&none",      "&none",     "&none",  "&none",           "&trans",                                                                  "&none",          "&none",     "&none",     "&none",     "&none",  "&none", "&bootloader",
+        "&none",        "&none",         "&none",      "&none",     "&none",  "&none",            "&none",                                                                  "&none",       "&kp HOME", "&kp PG_DN", "&kp PG_UP",   "&kp END",  "&none",       "&none",
+        "&none", "&kp LEFT_ALT", "&kp LEFT_META", "&kp LSHIFT", "&kp LCTRL",  "&none",            "&none",  "&none",  "&none",                      "&none",   "&none",     "&none", "&kp LEFT_ARROW",  "&kp DOWN",    "&kp UP", "&kp RIGHT",  "&none",       "&none",
+        "&none",        "&none",         "&none",      "&none",     "&none",  "&none",                                "&none",                      "&none",                                  "&none",     "&none",     "&none",     "&none",  "&none",       "&none",
+        "&none",        "&none",         "&none",      "&none",     "&none",                      "&none",  "&none",  "&none",                      "&none", "&kp TAB", "&kp ENTER",                       "&none",     "&none",     "&none",  "&none",       "&none"
     ]
   ]
 }
