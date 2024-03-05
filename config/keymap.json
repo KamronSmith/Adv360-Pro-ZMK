@@ -4,14 +4,15 @@
   "layout": "LAYOUT",
   "layer_names": [
     "base",
-    "extend"
+    "extend",
+    "SYMBOL"
   ],
   "layers": [
     [
          "&none", "&kp N1", "&kp N2", "&kp N3", "&kp N4", "&kp N5",                 "&none",                                                                       "&mo 3", "&kp N6", "&kp N7",     "&kp N8",    "&kp N9",       "&kp N0",      "&none",
          "&none",  "&kp V",  "&kp M",  "&kp L",  "&kp C",  "&kp P",                 "&none",                                                                       "&none",  "&kp B",  "&none",      "&kp U",     "&kp O",        "&kp Q",   "&kp CAPS",
        "&kp ESC",  "&kp S",  "&kp T",  "&kp R",  "&kp D",  "&kp Y",                 "&none",      "&none",  "&none",                      "&none",     "&none",    "&none",  "&kp F",  "&kp N",      "&kp E",     "&kp A",        "&kp I", "&caps_word",
-         "&none",  "&kp X",  "&kp K",  "&kp J",  "&kp G",  "&kp W",                                         "&none",                      "&none",                           "&kp B",  "&kp H", "&kp PERIOD", "&kp COMMA", "&kp QUESTION",      "&none",
+         "&none",  "&kp X",  "&kp K",  "&kp J",  "&kp G",  "&kp W",                                         "&none",                      "&none",                           "&kp Z",  "&kp H", "&kp PERIOD", "&kp COMMA", "&kp QUESTION",      "&none",
          "&none",  "&none",  "&none",  "&none",  "&none",                     "&lt 1 SPACE", "&kp LSHIFT",  "&none",                      "&none", "&kp LCTRL", "&kp BSPC",            "&none",      "&none",     "&none",        "&none",      "&none"
     ], [
         "&none",        "&none",         "&none",      "&none",     "&none",  "&none",           "&trans",                                                                  "&none",          "&none",     "&none",     "&none",     "&none",  "&none", "&bootloader",
@@ -19,6 +20,12 @@
         "&none", "&kp LEFT_ALT", "&kp LEFT_META", "&kp LSHIFT", "&kp LCTRL",  "&none",            "&none",  "&none",  "&none",                      "&none",   "&none",     "&none", "&kp LEFT_ARROW",  "&kp DOWN",    "&kp UP", "&kp RIGHT",  "&none",       "&none",
         "&none",        "&none",         "&none",      "&none",     "&none",  "&none",                                "&none",                      "&none",                                  "&none",     "&none",     "&none",     "&none",  "&none",       "&none",
         "&none",        "&none",         "&none",      "&none",     "&none",                      "&none",  "&none",  "&none",                      "&none", "&kp TAB", "&kp ENTER",                       "&none",     "&none",     "&none",  "&none",       "&none"
+    ], [
+       "&trans", "&trans",    "&trans",     "&trans",    "&trans",          "&trans",           "&trans",                                                             "&trans", "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
+       "&trans", "&kp AT",     "&none",      "&none",     "&none",           "&none",           "&trans",                                                             "&trans",  "&none",  "&none",  "&none",  "&none",  "&none", "&trans",
+       "&trans",  "&none", "&kp COLON",      "&none", "&kp MINUS",           "&none",           "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans",  "&none",  "&none",  "&none",  "&none",  "&none", "&trans",
+       "&trans",  "&none",     "&none", "&kp DOLLAR",     "&none", "&kp EXCLAMATION",                               "&trans",                     "&trans",                      "&none",  "&none",  "&none",  "&none",  "&none", "&trans",
+       "&trans", "&trans",    "&trans",     "&trans",    "&trans",                              "&trans", "&trans", "&trans",                     "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans"
     ]
   ]
 }
