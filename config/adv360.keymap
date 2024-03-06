@@ -1,8 +1,11 @@
+
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
  */
+
+
 /* THIS FILE WAS GENERATED!
  *
  * This file was generated automatically. You may or may not want to
@@ -13,61 +16,54 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    behaviors {
-        #include "macros.dtsi"
+  behaviors {
+    #include "macros.dtsi"
     #include "version.dtsi"
 
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick_tap_ms = <175>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
+    hm: homerow_mods {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick_tap_ms = <175>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
     };
-
-    macros {
-        orgmodemacro: orgmodemacro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp HASH &kp PLUS>;
-            label = "ORGMODEMACRO";
-        };
-    };
+  };
 
     keymap {
         compatible = "zmk,keymap";
 
+
         default_layer {
             bindings = <
-&none    &kp N1  &kp N2  &kp N3  &kp N4   &kp N5  &none                                                 &mo 3     &kp N6  &kp N7  &kp N8      &kp N9     &kp N0        &none
-&none    &kp V   &kp M   &kp L   &kp C    &kp P   &none                                                 &none     &kp B   &none   &kp U       &kp O      &kp Q         &kp CAPS
-&kp ESC  &kp S   &kp T   &kp R   &lt 2 D  &kp Y   &none        &none       &none      &none  &none      &none     &kp F   &kp N   &kp E       &kp A      &kp I         &caps_word
-&none    &kp X   &kp K   &kp J   &kp G    &kp W                            &none      &none                       &kp Z   &kp H   &kp PERIOD  &kp COMMA  &kp QUESTION  &none
-&none    &none   &none   &none   &none            &lt 1 SPACE  &kp LSHIFT  &none      &none  &kp LCTRL  &kp BSPC          &none   &none       &none      &none         &none
+   &none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                  &none                                                            &mo 3  &kp N6  &kp N7      &kp N8     &kp N9        &kp N0       &none
+   &none   &kp V   &kp M   &kp L   &kp C   &kp P                  &none                                                            &none   &kp X   &kp F       &kp O      &kp U         &kp J    &kp CAPS
+ &kp ESC   &kp S   &kp T   &kp R   &kp D   &kp Y                  &none       &none   &none                   &none      &none     &none   &kp F   &kp N       &kp E      &kp A         &kp I  &caps_word
+   &none   &kp Z   &kp K   &kp Q   &kp G   &kp W                                      &none                   &none                        &kp B   &kp H  &kp PERIOD  &kp COMMA  &kp QUESTION       &none
+   &none   &none   &none   &none   &none                    &lt 1 SPACE  &kp LSHIFT   &none                   &none  &kp LCTRL  &kp BSPC           &none       &none      &none         &none       &none
             >;
         };
 
         layer_extend {
             bindings = <
-&bootloader  &none         &none          &none       &none      &none  &trans                                    &none      &none           &none      &none      &none      &none  &bootloader
-&none        &none         &none          &none       &none      &none  &none                                     &none      &kp HOME        &kp PG_DN  &kp PG_UP  &kp END    &none  &none
-&none        &kp LEFT_ALT  &kp LEFT_META  &kp LSHIFT  &kp LCTRL  &none  &none   &none  &none      &none  &none    &none      &kp LEFT_ARROW  &kp DOWN   &kp UP     &kp RIGHT  &none  &none
-&none        &none         &none          &none       &none      &none                 &none      &none                      &none           &none      &none      &none      &none  &none
-&none        &none         &none          &none       &none             &none   &none  &none      &none  &kp TAB  &kp ENTER                  &none      &none      &none      &none  &none
+ &bootloader         &none          &none       &none      &none   &none            &trans                                                       &none           &none      &none      &none      &none   &none  &bootloader
+       &none         &none          &none       &none      &none   &none             &none                                                       &none        &kp HOME  &kp PG_DN  &kp PG_UP    &kp END   &none        &none
+       &none  &kp LEFT_ALT  &kp LEFT_META  &kp LSHIFT  &kp LCTRL   &none             &none   &none   &none                   &none    &none      &none  &kp LEFT_ARROW   &kp DOWN     &kp UP  &kp RIGHT   &none        &none
+       &none         &none          &none       &none      &none   &none                             &none                   &none                               &none      &none      &none      &none   &none        &none
+       &none         &none          &none       &none      &none                     &none   &none   &none                   &none  &kp TAB  &kp ENTER                      &none      &none      &none   &none        &none
             >;
         };
 
         layer_SYMBOL {
             bindings = <
-&trans  &trans          &trans     &trans      &trans         &trans           &trans                                      &trans  &trans         &trans                &trans                 &trans  &trans  &trans
-&trans  &kp AT          &none      &none       &none          &none            &trans                                      &trans  &none          &kp LEFT_BRACE        &kp RIGHT_BRACE        &none   &none   &trans
-&trans  &kp UNDERSCORE  &kp COLON  &kp SLASH   &kp MINUS      &none            &trans  &trans  &trans      &trans  &trans  &trans  &kp SEMICOLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none   &none   &trans
-&trans  &none           &none      &kp DOLLAR  &none          &kp EXCLAMATION                  &trans      &trans                  &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none   &none   &trans
-&trans  &trans          &trans     &trans      &orgmodemacro                   &trans  &trans  &trans      &trans  &trans  &trans                 &trans                &trans                 &trans  &trans  &trans
+ &trans          &trans     &trans      &trans        &trans           &trans            &trans                                                  &trans  &trans                &trans                 &trans  &trans  &trans  &trans
+ &trans          &kp AT      &none       &none  &kp ASTERISK            &none            &trans                                                  &trans   &none        &kp LEFT_BRACE        &kp RIGHT_BRACE   &none   &none  &trans
+ &trans  &kp UNDERSCORE  &kp COLON   &kp SLASH     &kp MINUS         &kp PIPE            &trans  &trans  &trans                  &trans  &trans  &trans   &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &none   &none  &trans
+ &trans           &none      &none  &kp DOLLAR      &kp PLUS  &kp EXCLAMATION                            &trans                  &trans                   &none      &kp LEFT_BRACKET      &kp RIGHT_BRACKET   &none   &none  &trans
+ &trans          &trans     &trans      &trans        &trans                             &trans  &trans  &trans                  &trans  &trans  &trans                        &trans                 &trans  &trans  &trans  &trans
             >;
         };
+
     };
 };
