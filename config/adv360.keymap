@@ -10,6 +10,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -77,6 +78,13 @@
             bindings = <&none &kp N1 &kp Q &kp A &kp Z &kp N2 &kp W &kp S &kp X &kp EXCL &kp LS(Q) &kp LS(A) &kp LS(Z) &kp AT &kp LS(W) &kp LS(S) &kp LS(X)>;
             label = "PAS3";
         };
+
+        org: org {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "ORG";
+        };
     };
 
     combos {
@@ -108,21 +116,21 @@
 
         default_layer {
             bindings = <
-&none    &kp N1           &kp N2            &kp N3             &kp N4        &kp N5  &none                                                 &kp LC(LA(DELETE))  &kp N6   &kp N7                &kp N8              &kp N9             &kp N0            &none
-&none    &kp V            &kp M             &kp L              &kp C         &kp P   &none                                                 &none               &kp B    &kp F                 &kp O               &kp U              &kp Q             &kp CAPS
-&kp ESC  &hml LEFT_ALT S  &hml LEFT_META T  &hml LEFT_SHIFT R  &hml LCTRL D  &kp Y   &none        &none           &none      &none  &none  &none               &kp DOT  &hmr RIGHT_CONTROL N  &hmr RIGHT_SHIFT E  &hmr RIGHT_META A  &hmr RIGHT_ALT I  &caps_word
-&none    &kp Z            &kp K             &kp J              &kp G         &kp W                                &none      &none                             &kp X    &kp H                 &kp COMMA           &kp QUESTION       &kp EXCL          &none
-&none    &none            &none             &none              &none                 &lt 1 SPACE  &sk LEFT_SHIFT  &none      &none  &mo 2  &kp BSPC                     &pass                 &pas2               &pas3              &none             &none
+&none    &kp N1           &kp N2            &kp N3             &kp N4        &kp N5  &none                                                      &kp LC(LA(DELETE))  &kp N6   &kp N7                &kp N8              &kp N9             &kp N0            &none
+&none    &kp V            &kp M             &kp L              &kp C         &kp P   &none                                                      &none               &kp B    &kp F                 &kp O               &kp U              &kp Q             &kp CAPS
+&kp ESC  &hml LEFT_ALT S  &hml LEFT_META T  &hml LEFT_SHIFT R  &hml LCTRL D  &kp Y   &none        &none           &none           &none  &none  &none               &kp DOT  &hmr RIGHT_CONTROL N  &hmr RIGHT_SHIFT E  &hmr RIGHT_META A  &hmr RIGHT_ALT I  &caps_word
+&none    &kp Z            &kp K             &kp J              &kp G         &kp W                                &bt BT_NXT      &none                             &kp X    &kp H                 &kp COMMA           &kp QUESTION       &kp EXCL          &none
+&none    &org             &none             &none              &kp ASTERISK          &lt 1 SPACE  &sk LEFT_SHIFT  &bt BT_PRV      &none  &mo 2  &kp BSPC                     &kp COLON             &none               &none              &none             &none
             >;
         };
 
         layer_extend {
             bindings = <
-&bootloader  &none         &none          &none       &none      &none  &trans                                    &none      &none           &none              &none          &none      &none  &bootloader
-&none        &none         &none          &none       &none      &none  &none                                     &none      &kp HOME        &kp PG_DN          &kp PG_UP      &kp END    &none  &none
-&none        &kp LEFT_ALT  &kp LEFT_META  &kp LSHIFT  &kp LCTRL  &none  &none   &none  &none      &none  &none    &none      &kp LEFT_ARROW  &kp DOWN           &kp UP         &kp RIGHT  &none  &none
-&none        &none         &none          &none       &none      &none                 &none      &none                      &none           &kp LC(PAGE_DOWN)  &kp LC(PG_UP)  &none      &none  &none
-&none        &none         &none          &none       &none             &none   &none  &none      &none  &kp TAB  &kp ENTER                  &none              &none          &none      &none  &none
+&bootloader  &none         &none          &none       &none      &none  &trans                                    &none      &none           &none            &none              &none      &none  &bootloader
+&none        &none         &none          &none       &none      &none  &none                                     &none      &kp HOME        &kp PG_DN        &kp PG_UP          &kp END    &none  &none
+&none        &kp LEFT_ALT  &kp LEFT_META  &kp LSHIFT  &kp LCTRL  &none  &none   &none  &none      &none  &none    &none      &kp LEFT_ARROW  &kp DOWN         &kp UP             &kp RIGHT  &none  &none
+&none        &none         &none          &none       &none      &none                 &none      &none                      &none           &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &none      &none  &none
+&none        &none         &none          &none       &none             &none   &none  &none      &none  &kp TAB  &kp ENTER                  &pass            &pas2              &pas3      &none  &none
             >;
         };
 
