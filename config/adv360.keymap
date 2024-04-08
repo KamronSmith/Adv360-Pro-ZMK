@@ -150,7 +150,7 @@
 &trans  &trans     &trans      &trans                 &trans                &trans         &trans                                                &trans  &trans  &trans        &trans        &trans        &trans  &trans
 &trans  &kp AT     &kp DOLLAR  &kp RIGHT_BRACE        &kp LEFT_BRACE        &kp PIPE       &trans                                                &trans  &none   &kp N7        &kp N8        &kp N9        &none   &trans
 &trans  &kp TILDE  &kp SLASH   &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &none          &trans     &trans         &trans      &trans  &trans  &trans  &kp N0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none   &trans
-&trans  &kp GRAVE  &none       &kp RIGHT_BRACKET      &kp LEFT_BRACKET      &kp BACKSLASH                            &trans      &trans                  &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none   &trans
+&trans  &kp GRAVE  &kp PLUS    &kp RIGHT_BRACKET      &kp LEFT_BRACKET      &kp BACKSLASH                            &trans      &trans                  &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none   &trans
 &trans  &trans     &trans      &trans                 &trans                               &kp LCTRL  &kp LEFT_META  &trans      &trans  &trans  &trans          &trans        &trans        &trans        &trans  &trans
             >;
         };
