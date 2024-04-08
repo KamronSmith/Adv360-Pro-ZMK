@@ -127,11 +127,11 @@
 
         default_layer {
             bindings = <
-&none     &kp F5           &kp F4             &kp F3            &kp F2        &kp F1  &none                                                               &kp LC(LA(DELETE))  &kp F6   &kp F7                &kp F8            &kp F9              &kp F10           &none
-&none     &kp V            &kp M              &kp L             &kp C         &kp P   &kp C_AL_WWW                                                        &none               &kp B    &kp F                 &kp O             &kp U               &kp Q             &none
-&Nextsen  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &hml LEFT_META R  &hml LCTRL D  &kp Y   &none         &none           &none      &out OUT_TOG  &bl BL_TOG   &none               &kp DOT  &hmr RIGHT_CONTROL N  &hmr LEFT_META E  &hmr RIGHT_SHIFT A  &hmr RIGHT_ALT I  &kp MINUS
-&none     &kp Z            &kp K              &kp J             &kp G         &kp W                                 &none      &none                                          &kp X    &kp H                 &kp COMMA         &Exclm              &kp SINGLE_QUOTE  &none
-&none     &org             &none              &kp STAR          &kp COLON             &lt 1 SPACE   &sk LEFT_SHIFT  &none      &none         &key_repeat  &lt 2 BACKSPACE              &kp DOUBLE_QUOTES     &kp SEMI          &none               &none             &none
+&none     &kp F5           &kp F4             &kp F3            &kp F2        &kp F1  &none                                                                                &kp LC(LA(DELETE))  &kp F6   &kp F7                &kp F8            &kp F9              &kp F10           &none
+&none     &kp V            &kp M              &kp L             &kp C         &kp P   &kp C_AL_WWW                                                                         &none               &kp B    &kp F                 &kp O             &kp U               &kp Q             &none
+&Nextsen  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &hml LEFT_META R  &hml LCTRL D  &kp Y   &none         &kp LS(LA(LC(LG(A))))  &none      &out OUT_TOG  &kp LS(LA(LC(LG(B))))  &none               &kp DOT  &hmr RIGHT_CONTROL N  &hmr LEFT_META E  &hmr RIGHT_SHIFT A  &hmr RIGHT_ALT I  &kp MINUS
+&none     &kp Z            &kp K              &kp J             &kp G         &kp W                                        &none      &bl BL_TOG                                               &kp X    &kp H                 &kp COMMA         &Exclm              &kp SINGLE_QUOTE  &none
+&none     &org             &none              &kp STAR          &kp COLON             &lt 1 SPACE   &sk LEFT_SHIFT         &none      &none         &key_repeat            &lt 2 BACKSPACE              &kp DOUBLE_QUOTES     &kp SEMI          &none               &none             &none
             >;
         };
 
