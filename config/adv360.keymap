@@ -99,7 +99,7 @@
         Nextsen: Nextsen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp PERIOD &kp SPACE &kp LSHFT>;
+            bindings = <&kp PERIOD &kp SPACE &sk LEFT_SHIFT>;
             label = "NEXTSEN";
         };
     };
