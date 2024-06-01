@@ -167,11 +167,11 @@
 
         default_layer {
             bindings = <
-&none       &kp N5           &kp N4             &kp N3            &kp N2        &kp N1  &none                                                                                            &kp LC(LA(DELETE))     &kp N0      &kp N6        &kp N7            &kp N8              &kp NUMBER_9      &none
-&none       &kp V            &kp M              &kp L             &kp C         &kp P   &kp LS(LA(LC(LG(C))))                                                                            &kp LS(LG(LA(LC(X))))  &kp B       &kp F         &kp O             &kp U               &kp Q             &caps_word
-&nextcomma  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &hml LEFT_META R  &hml LCTRL D  &kp Y   &kp LS(LA(LC(LG(W))))  &kp LC(C)       &none           &out OUT_TOG  &kp LS(LA(LC(LG(Y))))       &kp LS(LC(LG(LA(F))))  &kp PERIOD  &hmr RCTRL N  &hmr RIGHT_GUI E  &hmr RIGHT_SHIFT A  &hmr RIGHT_ALT I  &Nextsen
-&none       &kp Z            &kp K              &kp J             &kp G         &kp W                                          &kp ESCAPE      &kp F13                                                          &kp X       &kp H         &kp COMMA         &Exclm              &kp SINGLE_QUOTE  &none
-&kp F5      &kp F4           &kp F3             &kp F2            &kp F1                &lt 1 SPACE            &sk LEFT_SHIFT  &kp F12         &kp F14       &kp LA(LC(LG(LEFT_SHIFT)))  &lt 2 BACKSPACE                    &kp F6        &kp F7            &kp F8              &kp F9            &kp F10
+&none       &kp N5           &kp N4             &kp N3            &kp N2        &kp N1  &none                                                                                         &kp LC(LA(DELETE))     &kp N0      &kp N6        &kp N7            &kp N8              &kp NUMBER_9      &none
+&none       &kp V            &kp M              &kp L             &kp C         &kp P   &kp LS(LA(LC(LG(C))))                                                                         &kp LS(LG(LA(LC(X))))  &kp B       &kp F         &kp O             &kp U               &kp Q             &caps_word
+&nextcomma  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &hml LEFT_META R  &hml LCTRL D  &kp Y   &kp LS(LA(LC(LG(W))))  &kp ESCAPE      &none        &out OUT_TOG  &kp LS(LA(LC(LG(Y))))       &kp LS(LC(LG(LA(F))))  &kp PERIOD  &hmr RCTRL N  &hmr RIGHT_GUI E  &hmr RIGHT_SHIFT A  &hmr RIGHT_ALT I  &Nextsen
+&none       &kp Z            &kp K              &kp J             &kp G         &kp W                                          &none        &kp F13                                                          &kp X       &kp H         &kp COMMA         &Exclm              &kp SINGLE_QUOTE  &none
+&kp F5      &kp F4           &kp F3             &kp F2            &kp F1                &lt 1 SPACE            &sk LEFT_SHIFT  &kp F12      &kp F14       &kp LA(LC(LG(LEFT_SHIFT)))  &lt 2 BACKSPACE                    &kp F6        &kp F7            &kp F8              &kp F9            &kp F10
             >;
         };
 
@@ -187,11 +187,11 @@
 
         layer_SYMBOL {
             bindings = <
-&none  &none                &none                  &none                 &none             &none            &none                                  &none  &none          &none                                &none                              &none                           &none                 &none
-&none  &kp AT               &kp DOLLAR             &kp CARET             &kp EQUAL         &kp AMPS         &none                                  &none  &kp PERCENT    &kp LEFT_BRACE                       &kp RIGHT_BRACE                    &kp GRAVE                       &none                 &none
-&none  &hml LEFT_ALT UNDER  &hml LEFT_SHIFT COLON  &hml LEFT_META SLASH  &hml LCTRL MINUS  &kp PIPE         &none  &none  &none      &none  &none  &none  &kp SEMICOLON  &hmr RIGHT_CONTROL LEFT_PARENTHESIS  &hmr RIGHT_META RIGHT_PARENTHESIS  &hmr RIGHT_SHIFT DOUBLE_QUOTES  &hmr RIGHT_ALT TILDE  &none
-&none  &kp HASH             &kp ASTRK              &kp DOLLAR            &kp PLUS          &kp EXCLAMATION                &none      &none                &kp BACKSLASH  &kp LEFT_BRACKET                     &kp RIGHT_BRACKET                  &kp LESS_THAN                   &kp GREATER_THAN      &none
-&none  &none                &none                  &none                 &none                              &none  &none  &none      &none  &none  &none                 &none                                &none                              &none                           &none                 &none
+&none  &none                &none                  &none                 &none             &none            &none                                      &none  &none          &none                                &none                              &none                           &none                 &none
+&none  &kp AT               &kp DOLLAR             &kp CARET             &kp EQUAL         &kp AMPS         &none                                      &none  &kp PERCENT    &kp LEFT_BRACE                       &kp RIGHT_BRACE                    &kp GRAVE                       &none                 &none
+&none  &hml LEFT_ALT UNDER  &hml LEFT_SHIFT COLON  &hml LEFT_META SLASH  &hml LCTRL MINUS  &kp ASTRK        &none      &none  &none      &none  &none  &none  &kp SEMICOLON  &hmr RIGHT_CONTROL LEFT_PARENTHESIS  &hmr RIGHT_META RIGHT_PARENTHESIS  &hmr RIGHT_SHIFT DOUBLE_QUOTES  &hmr RIGHT_ALT TILDE  &none
+&none  &kp HASH             &kp PIPE               &kp DOLLAR            &kp PLUS          &kp EXCLAMATION                    &none      &none                &kp BACKSLASH  &kp LEFT_BRACKET                     &kp RIGHT_BRACKET                  &kp LESS_THAN                   &kp GREATER_THAN      &none
+&none  &none                &none                  &none                 &none                              &kp SPACE  &none  &none      &none  &none  &none                 &none                                &none                              &none                           &none                 &none
             >;
         };
     };
