@@ -125,7 +125,7 @@
         org: org {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp PERIOD>;
+            bindings = <&kp POUND &kp PLUS>;
             label = "ORG";
         };
 
@@ -141,13 +141,6 @@
             #binding-cells = <0>;
             bindings = <&kp COMMA &kp SPACE>;
             label = "NEXTCOMMA";
-        };
-
-        orgmode: orgmode {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp POUND &kp PLUS &kp COLON &kp SPACE>;
-            label = "ORGMODE";
         };
 
         shell_back: shell_back {
@@ -205,7 +198,7 @@
 &none  &kp AT               &kp DOLLAR             &kp CARET             &kp EQUAL         &kp AMPS         &none                                      &none  &kp PERCENT    &kp LEFT_BRACE                       &kp RIGHT_BRACE                    &kp GRAVE                       &none                 &none
 &none  &hml LEFT_ALT UNDER  &hml LEFT_SHIFT COLON  &hml LEFT_META SLASH  &hml LCTRL MINUS  &kp ASTRK        &none      &none  &none      &none  &none  &none  &kp SEMICOLON  &hmr RIGHT_CONTROL LEFT_PARENTHESIS  &hmr RIGHT_META RIGHT_PARENTHESIS  &hmr RIGHT_SHIFT DOUBLE_QUOTES  &hmr RIGHT_ALT TILDE  &none
 &none  &kp HASH             &kp PIPE               &kp DOLLAR            &kp PLUS          &kp EXCLAMATION                    &none      &none                &kp BACKSLASH  &kp LEFT_BRACKET                     &kp RIGHT_BRACKET                  &kp LESS_THAN                   &kp GREATER_THAN      &none
-&none  &none                &none                  &none                 &orgmode                           &kp SPACE  &none  &none      &none  &none  &none                 &shell_back                          &none                              &none                           &none                 &none
+&none  &none                &none                  &none                 &org                               &kp SPACE  &none  &none      &none  &none  &none                 &shell_back                          &none                              &none                           &none                 &none
             >;
         };
     };
