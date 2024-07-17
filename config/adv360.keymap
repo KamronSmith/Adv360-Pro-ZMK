@@ -174,11 +174,11 @@
 
         default_layer {
             bindings = <
-&none       &kp N5           &kp N4             &kp N3            &kp N2        &kp N1  &none                                                                                                &kp LC(LA(DELETE))     &kp N0      &kp N6        &kp N7            &kp N8              &kp NUMBER_9      &none
-&none       &kp V            &kp M              &kp L             &kp C         &kp P   &kp LS(LA(LC(LG(C))))                                                                                &kp LS(LG(LA(LC(X))))  &kp B       &kp F         &kp O             &kp U               &kp Q             &caps_word
-&nextcomma  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &hml LEFT_META R  &hml LCTRL D  &kp Y   &kp LS(LA(LC(LG(W))))  &kp ESCAPE                  &none        &out OUT_TOG  &kp LS(LA(LC(LG(Y))))  &kp LS(LC(LG(LA(F))))  &kp PERIOD  &hmr RCTRL N  &hmr RIGHT_GUI E  &hmr RIGHT_SHIFT A  &hmr RIGHT_ALT I  &Nextsen
-&none       &kp Z            &kp K              &kp J             &kp G         &kp W                                                      &none        &kp F13                                                     &kp X       &kp H         &kp COMMA         &kp EXCL            &kp QUESTION      &none
-&kp F5      &kp F4           &kp F3             &kp F2            &kp F1                &lt 1 SPACE            &sk LA(LC(LG(LEFT_SHIFT)))  &kp F12      &kp F14       &sk LEFT_SHIFT         &lt 2 BACKSPACE                    &kp F6        &kp F7            &kp F8              &kp F9            &kp F10
+&none       &kp N5           &kp N4             &kp N3            &kp N2        &kp N1  &none                                                                                         &kp LC(LA(DELETE))     &kp N0      &kp N6        &kp N7            &kp N8              &kp NUMBER_9      &none
+&none       &kp V            &kp M              &kp L             &kp C         &kp P   &kp LS(LA(LC(LG(C))))                                                                         &kp LS(LG(LA(LC(X))))  &kp B       &kp F         &kp O             &kp U               &kp Q             &none
+&nextcomma  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &hml LEFT_META R  &hml LCTRL D  &kp Y   &kp LS(LA(LC(LG(W))))  &kp ESCAPE                  &none        &out OUT_TOG  &caps_word      &kp LS(LC(LG(LA(F))))  &kp PERIOD  &hmr RCTRL N  &hmr RIGHT_GUI E  &hmr RIGHT_SHIFT A  &hmr RIGHT_ALT I  &Nextsen
+&none       &kp Z            &kp K              &kp J             &kp G         &kp W                                                      &none        &kp F13                                              &kp X       &kp H         &kp COMMA         &kp EXCL            &kp QUESTION      &none
+&kp F5      &kp F4           &kp F3             &kp F2            &kp F1                &lt 1 SPACE            &sk LA(LC(LG(LEFT_SHIFT)))  &kp F12      &kp F14       &sk LEFT_SHIFT  &lt 2 BACKSPACE                    &kp F6        &kp F7            &kp F8              &kp F9            &kp F10
             >;
         };
 
