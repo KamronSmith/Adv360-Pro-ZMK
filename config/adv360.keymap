@@ -17,8 +17,8 @@
 
 &lt {
     tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    require-prior-idle-ms = <180>;
+    quick-tap-ms = <100>;
+    require-prior-idle-ms = <125>;
     flavor = "balanced";
     hold-trigger-on-release;
 };
@@ -66,37 +66,34 @@
             hold-trigger-on-release;
         };
 
-        Exclm: Exclm {
+        Bspc: Bspc {
             compatible = "zmk,behavior-mod-morph";
-            label = "EXCLM";
-            bindings = <&kp EXCL>, <&kp QUESTION>;
+            label = "BSPC";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LGUI)>;
         };
 
-        space: space {
+        Bspc2: Bspc2 {
             compatible = "zmk,behavior-hold-tap";
-            label = "SPACE";
-            bindings = <&sk>, <&kp>;
+            label = "BSPC2";
+            bindings = <&lt>, <&Bspc>;
 
             #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <100>;
+            require-prior-idle-ms = <125>;
             flavor = "balanced";
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <175>;
-            tapping-term-ms = <280>;
         };
 
-        layer: layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER";
-            bindings = <&mo>, <&kp>;
+        CAPS: CAPS {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CAPS";
+            bindings = <&caps_word>, <&kp CAPSLOCK>;
 
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <175>;
-            flavor = "balanced";
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
         };
     };
 
@@ -174,11 +171,11 @@
 
         default_layer {
             bindings = <
-&none       &kp N5           &kp N4             &kp N3            &kp N2        &kp N1  &none                                                                                         &kp LC(LA(DELETE))     &kp N0      &kp N6        &kp N7            &kp N8              &kp NUMBER_9      &none
-&none       &kp V            &kp M              &kp L             &kp C         &kp P   &kp LS(LA(LC(LG(C))))                                                                         &kp LS(LG(LA(LC(X))))  &kp B       &kp F         &kp O             &kp U               &kp Q             &none
-&nextcomma  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &hml LEFT_META R  &hml LCTRL D  &kp Y   &kp LS(LA(LC(LG(W))))  &kp ESCAPE                  &none        &out OUT_TOG  &caps_word      &kp LS(LC(LG(LA(F))))  &kp PERIOD  &hmr RCTRL N  &hmr RIGHT_GUI E  &hmr RIGHT_SHIFT A  &hmr RIGHT_ALT I  &Nextsen
-&none       &kp Z            &kp K              &kp J             &kp G         &kp W                                                      &none        &kp F13                                              &kp X       &kp H         &kp COMMA         &kp EXCL            &kp QUESTION      &none
-&kp F5      &kp F4           &kp F3             &kp F2            &kp F1                &lt 1 SPACE            &sk LA(LC(LG(LEFT_SHIFT)))  &kp F12      &kp F14       &sk LEFT_SHIFT  &lt 2 BACKSPACE                    &kp F6        &kp F7            &kp F8              &kp F9            &kp F10
+&none       &kp N5           &kp N4             &kp N3            &kp N2        &kp N1  &none                                                                         &kp LC(LA(DELETE))     &kp N0      &kp N6        &kp N7            &kp N8              &kp NUMBER_9      &none
+&none       &kp V            &kp M              &kp L             &kp C         &kp P   &kp LS(LA(LC(LG(C))))                                                         &kp LS(LG(LA(LC(X))))  &kp B       &kp F         &kp O             &kp U               &kp Q             &none
+&nextcomma  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &hml LEFT_META R  &hml LCTRL D  &kp Y   &kp LS(LA(LC(LG(W))))  &kp ESCAPE  &none        &out OUT_TOG  &CAPS           &kp LS(LC(LG(LA(F))))  &kp PERIOD  &hmr RCTRL N  &hmr RIGHT_GUI E  &hmr RIGHT_SHIFT A  &hmr RIGHT_ALT I  &Nextsen
+&none       &kp Z            &kp K              &kp J             &kp G         &kp W                                      &none        &kp F13                                              &kp X       &kp H         &kp COMMA         &kp EXCL            &kp QUESTION      &none
+&kp F5      &kp F4           &kp F3             &kp F2            &kp F1                &lt 1 SPACE            &kp ENTER   &kp F12      &kp F14       &sk LEFT_SHIFT  &Bspc2 2 0                         &kp F6        &kp F7            &kp F8              &kp F9            &kp F10
             >;
         };
 
@@ -186,7 +183,7 @@
             bindings = <
 &bootloader  &none         &none       &none         &kp F2           &kp F1  &trans                                             &none      &none           &none              &none       &none           &none            &bootloader
 &none        &none         &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &none   &none                                              &none      &kp HOME        &kp PG_DN          &kp PG_UP   &kp END         &kp PAUSE_BREAK  &none
-&none        &kp LEFT_ALT  &kp LSHFT   &kp LEFT_GUI  &kp LCTRL        &none   &none   &none  &none      &none  &kp C_PLAY_PAUSE  &none      &kp LEFT_ARROW  &kp DOWN           &kp UP      &kp RIGHT       &kp BACKSPACE    &none
+&none        &kp LEFT_ALT  &kp LSHFT   &kp LEFT_GUI  &kp LCTRL        &none   &none   &none  &none      &none  &kp C_PLAY_PAUSE  &none      &kp LEFT_ARROW  &kp DOWN           &kp UP      &kp RIGHT       &none            &none
 &none        &none         &none       &kp C_PREV    &kp C_NEXT       &none                  &none      &none                               &none           &kp K_APPLICATION  &kp INSERT  &kp SCROLLLOCK  &kp PRINTSCREEN  &none
 &none        &none         &none       &none         &none                    &none   &none  &none      &none  &kp TAB           &kp ENTER                  &pass              &pas2       &pas3           &none            &none
             >;
