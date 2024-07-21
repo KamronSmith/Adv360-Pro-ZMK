@@ -151,18 +151,25 @@
     combos {
         compatible = "zmk,combos";
 
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <17 18>;
-            require-prior-idle-ms = <175>;
-            layers = <0>;
-        };
-
-        Repeat {
-            bindings = <&key_repeat>;
+        Tab {
+            bindings = <&kp TAB>;
             key-positions = <31 32>;
             require-prior-idle-ms = <175>;
-            layers = <0>;
+            layers = <0 1>;
+        };
+
+        Enter {
+            bindings = <&kp ENTER>;
+            key-positions = <41 42>;
+            require-prior-idle-ms = <175>;
+            layers = <0 1>;
+        };
+
+        Esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <31 30>;
+            require-prior-idle-ms = <175>;
+            layers = <0 1>;
         };
     };
 
