@@ -153,7 +153,7 @@
 
         Tab {
             bindings = <&kp TAB>;
-            key-positions = <31 32>;
+            key-positions = <31 30>;
             require-prior-idle-ms = <175>;
             layers = <0 1>;
         };
@@ -167,7 +167,7 @@
 
         Esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <31 30>;
+            key-positions = <31 32>;
             require-prior-idle-ms = <175>;
             layers = <0 1>;
         };
