@@ -146,30 +146,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        Tab {
-            bindings = <&kp ESCAPE>;
-            key-positions = <31 30>;
-            require-prior-idle-ms = <175>;
-            layers = <0 1>;
-        };
-
-        Enter {
-            bindings = <&kp ENTER>;
-            key-positions = <41 42>;
-            require-prior-idle-ms = <175>;
-            layers = <0 1>;
-        };
-
-        Esc {
-            bindings = <&kp TAB>;
-            key-positions = <31 32>;
-            require-prior-idle-ms = <175>;
-            layers = <0 1>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
