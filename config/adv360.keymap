@@ -15,7 +15,7 @@
 
 &sk { quick-release; };
 
-&sl { release-after-ms = <100>; };
+&sl { release-after-ms = <50>; };
 
 / {
     behaviors {
