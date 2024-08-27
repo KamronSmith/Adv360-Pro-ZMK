@@ -41,8 +41,8 @@
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <200>;
-            hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 38 39 40 41 42 43 44 45 54 55 56 57 58 59 69 70 71 72 73 74 75 37 38 53 68 69 35 36 52 66 67 65>;
+            require-prior-idle-ms = <220>;
+            hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 38 39 40 41 42 43 44 45 54 55 56 57 58 59 69 70 71 72 73 74 75 37 38 53 68 69>;
             hold-trigger-on-release;
         };
 
@@ -54,9 +54,9 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <220>;
             flavor = "balanced";
-            hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67 37 38 53 68 69 70>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 36 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67>;
             hold-trigger-on-release;
         };
 
@@ -98,7 +98,7 @@
             bindings = <&lt>, <&kp>;
 
             #binding-cells = <2>;
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <220>;
             flavor = "balanced";
             hold-trigger-key-positions = <7 8 9 13 12 11 10 21 22 23 24 43 27 25 26 39 40 42 41 44 45 54 56 55 57 59 58 71 72 75 74 73 69 70 38 37 53 68>;
             hold-trigger-on-release;
@@ -114,7 +114,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <220>;
             flavor = "balanced";
             hold-trigger-key-positions = <0 1 4 3 16 2 20 5 6 19 18 17 15 14 28 29 30 31 32 34 46 47 50 49 48 33 51 60 61 62 63 64 65 66 35 36 52 67>;
             hold-trigger-on-release;
@@ -181,7 +181,7 @@
             bindings = <
 &none       &kp N5           &kp N4             &kp N3            &kp N2        &kp N1  &none                                                                           &kp LC(LA(DELETE))     &kp N0      &kp N6        &kp N7           &kp N8        &kp NUMBER_9     &none
 &kp ESCAPE  &kp V            &kp M              &kp L             &kp C         &kp P   &kp LS(LA(LC(LG(C))))                                                           &kp LS(LG(LA(LC(X))))  &kp B       &kp F         &kp O            &kp U         &kp Q            &none
-&nextcomma  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &hml LEFT_META R  &hml LCTRL D  &kp Y   &kp LS(LA(LC(LG(W))))  &mo 1      &kp ESCAPE      &out OUT_TOG  &CAPS2          &kp LS(LC(LG(LA(F))))  &kp PERIOD  &hmr LSHFT N  &hmr LEFT_GUI E  &hmr LSHFT A  &hmr LEFT_ALT I  &kp TAB
+&nextcomma  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &hml LEFT_META R  &hml LCTRL D  &kp Y   &kp LS(LA(LC(LG(W))))  &mo 1      &kp ESCAPE      &out OUT_TOG  &CAPS2          &kp LS(LC(LG(LA(F))))  &kp PERIOD  &hmr LCTRL N  &hmr LEFT_GUI E  &hmr LSHFT A  &hmr LEFT_ALT I  &kp TAB
 &none       &kp Z            &kp K              &kp J             &Syml 2 G     &kp W                                     &kp F12         &kp F14                                              &kp X       &Symr 2 H     &kp COMMA        &kp EXCL      &kp QUESTION     &none
 &kp F5      &kp F4           &kp F3             &kp F2            &kp F1                &kp SPACE              &kp ENTER  &kp F13         &kp F15       &sk LEFT_SHIFT  &kp BACKSPACE                      &kp F6        &kp F7           &kp F8        &kp F9           &kp F10
             >;
