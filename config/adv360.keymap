@@ -30,7 +30,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        hml: hml {
+        Hml: Hml {
             compatible = "zmk,behavior-hold-tap";
             label = "HML";
             bindings = <&kp>, <&kp>;
@@ -44,7 +44,7 @@
             hold-trigger-on-release;
         };
 
-        hmr: hmr {
+        Hmr: Hmr {
             compatible = "zmk,behavior-hold-tap";
             label = "HMR";
             bindings = <&kp>, <&kp>;
@@ -87,7 +87,7 @@
             tapping-term-ms = <150>;
             quick-tap-ms = <125>;
             flavor = "balanced";
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <200>;
         };
     };
 
@@ -151,7 +151,7 @@
             bindings = <
 &none       &kp N5           &kp N4             &kp N3            &kp N2        &kp N1  &none                                                                           &kp LC(LA(DELETE))     &kp N0      &kp N6        &kp N7        &kp N8        &kp NUMBER_9  &none
 &kp ESCAPE  &kp V            &kp M              &kp L             &kp C         &kp P   &kp LS(LA(LC(LG(C))))                                                           &kp LS(LG(LA(LC(X))))  &kp B       &kp F         &kp O         &kp U         &kp Q         &none
-&nextcomma  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &hml LEFT_META R  &hml LCTRL D  &kp Y   &kp LS(LA(LC(LG(W))))  &kp TAB    &kp ESCAPE      &out OUT_TOG  &Caps           &kp LS(LC(LG(LA(F))))  &kp PERIOD  &hmr RCTRL N  &hmr RMETA E  &hmr RSHFT A  &hmr RALT I   &kp MINUS
+&nextcomma  &Hml LEFT_ALT S  &Hml LEFT_SHIFT T  &Hml LEFT_META R  &Hml LCTRL D  &kp Y   &kp LS(LA(LC(LG(W))))  &kp TAB    &kp ESCAPE      &out OUT_TOG  &Caps           &kp LS(LC(LG(LA(F))))  &kp PERIOD  &Hmr RCTRL N  &Hmr RMETA E  &Hmr RSHFT A  &Hmr RALT I   &kp MINUS
 &none       &kp Z            &kp K              &kp J             &kp G         &kp W                                     &kp F12         &kp F14                                              &kp X       &kp H         &kp COMMA     &kp EXCL      &kp QUESTION  &none
 &kp F5      &kp F4           &kp F3             &kp F2            &kp F1                &Spc 1 SPACE           &kp ENTER  &kp F13         &kp F15       &sk LEFT_SHIFT  &Bspc 2 BACKSPACE                  &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
             >;
@@ -171,7 +171,7 @@
             bindings = <
 &none  &none                &none                  &none                 &none             &none            &none                                  &none  &none          &none                                &none                              &none                           &none                 &none
 &none  &kp AT               &kp DOLLAR             &kp CARET             &kp EQUAL         &kp AMPS         &none                                  &none  &kp PERCENT    &kp LEFT_BRACE                       &kp RIGHT_BRACE                    &kp SINGLE_QUOTE                &kp GRAVE             &none
-&none  &hml LEFT_ALT UNDER  &hml LEFT_SHIFT COLON  &hml LEFT_META SLASH  &hml LCTRL MINUS  &kp ASTRK        &none  &none  &none      &none  &none  &none  &kp SEMICOLON  &hmr RIGHT_CONTROL LEFT_PARENTHESIS  &hmr RIGHT_META RIGHT_PARENTHESIS  &hmr RIGHT_SHIFT DOUBLE_QUOTES  &hmr RIGHT_ALT TILDE  &none
+&none  &Hml LEFT_ALT UNDER  &Hml LEFT_SHIFT COLON  &Hml LEFT_META SLASH  &Hml LCTRL MINUS  &kp ASTRK        &none  &none  &none      &none  &none  &none  &kp SEMICOLON  &Hmr RIGHT_CONTROL LEFT_PARENTHESIS  &Hmr RIGHT_META RIGHT_PARENTHESIS  &Hmr RIGHT_SHIFT DOUBLE_QUOTES  &Hmr RIGHT_ALT TILDE  &none
 &none  &kp HASH             &kp PIPE               &kp DOLLAR            &kp PLUS          &kp EXCLAMATION                &none      &none                &kp BACKSLASH  &kp LEFT_BRACKET                     &kp RIGHT_BRACKET                  &kp LESS_THAN                   &kp GREATER_THAN      &none
 &none  &none                &none                  &none                 &org                               &none  &none  &none      &none  &none  &none                 &shell_back                          &none                              &none                           &none                 &none
             >;
