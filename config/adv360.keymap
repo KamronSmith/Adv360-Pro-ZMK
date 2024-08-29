@@ -58,15 +58,6 @@
             hold-trigger-on-release;
         };
 
-        Caps: Caps {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CAPS";
-            bindings = <&caps_word>, <&kp CAPSLOCK>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-
         Bspc: Bspc {
             compatible = "zmk,behavior-hold-tap";
             label = "BSPC";
@@ -88,6 +79,15 @@
             quick-tap-ms = <125>;
             flavor = "balanced";
             require-prior-idle-ms = <200>;
+        };
+
+        Caps: Caps {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CAPS";
+            bindings = <&sk LSHFT>, <&caps_word>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
     };
 
@@ -149,11 +149,11 @@
 
         default_layer {
             bindings = <
-&none       &kp N5           &kp N4             &kp N3            &kp N2        &kp N1  &none                                                                           &kp LC(LA(DELETE))     &kp N0      &kp N6        &kp N7        &kp N8        &kp NUMBER_9  &none
-&kp ESCAPE  &kp V            &kp M              &kp L             &kp C         &kp P   &kp LS(LA(LC(LG(C))))                                                           &kp LS(LG(LA(LC(X))))  &kp B       &kp F         &kp O         &kp U         &kp Q         &none
-&nextcomma  &Hml LEFT_ALT S  &Hml LEFT_SHIFT T  &Hml LEFT_META R  &Hml LCTRL D  &kp Y   &kp LS(LA(LC(LG(W))))  &kp TAB    &kp ESCAPE      &out OUT_TOG  &Caps           &kp LS(LC(LG(LA(F))))  &kp PERIOD  &Hmr RCTRL N  &Hmr RMETA E  &Hmr RSHFT A  &Hmr RALT I   &kp MINUS
-&none       &kp Z            &kp K              &kp J             &kp G         &kp W                                     &kp F12         &kp F14                                              &kp X       &kp H         &kp COMMA     &kp EXCL      &kp QUESTION  &none
-&kp F5      &kp F4           &kp F3             &kp F2            &kp F1                &Spc 1 SPACE           &kp ENTER  &kp F13         &kp F15       &sk LEFT_SHIFT  &Bspc 2 BACKSPACE                  &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
+&none       &kp N5           &kp N4             &kp N3            &kp N2        &kp N1  &none                                                                      &kp LC(LA(DELETE))     &kp N0      &kp N6        &kp N7        &kp N8        &kp NUMBER_9  &none
+&kp ESCAPE  &kp V            &kp M              &kp L             &kp C         &kp P   &kp LS(LA(LC(LG(C))))                                                      &kp LS(LG(LA(LC(X))))  &kp B       &kp F         &kp O         &kp U         &kp Q         &none
+&nextcomma  &Hml LEFT_ALT S  &Hml LEFT_SHIFT T  &Hml LEFT_META R  &Hml LCTRL D  &kp Y   &kp LS(LA(LC(LG(W))))  &kp TAB    &kp ESCAPE      &out OUT_TOG  &kp MINUS  &kp LS(LC(LG(LA(F))))  &kp PERIOD  &Hmr RCTRL N  &Hmr RMETA E  &Hmr RSHFT A  &Hmr RALT I   &none
+&none       &kp Z            &kp K              &kp J             &kp G         &kp W                                     &kp F12         &kp F14                                         &kp X       &kp H         &kp COMMA     &kp EXCL      &kp QUESTION  &none
+&kp F5      &kp F4           &kp F3             &kp F2            &kp F1                &Spc 1 SPACE           &kp ENTER  &kp F13         &kp F15       &Caps      &Bspc 2 BACKSPACE                  &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
             >;
         };
 
