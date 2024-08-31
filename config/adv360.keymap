@@ -89,6 +89,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        Caps2: Caps2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CAPS2";
+            bindings = <&Caps>, <&kp CAPSLOCK>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
     };
 
     macros {
@@ -153,7 +162,7 @@
 &kp ESCAPE  &kp V            &kp M              &kp L             &kp C         &kp P   &kp LS(LA(LC(LG(C))))                                                      &kp LS(LG(LA(LC(X))))  &kp B       &kp F         &kp O         &kp U         &kp Q         &none
 &nextcomma  &Hml LEFT_ALT S  &Hml LEFT_SHIFT T  &Hml LEFT_META R  &Hml LCTRL D  &kp Y   &kp LS(LA(LC(LG(W))))  &kp TAB    &kp ESCAPE      &out OUT_TOG  &kp MINUS  &kp LS(LC(LG(LA(F))))  &kp PERIOD  &Hmr RCTRL N  &Hmr RMETA E  &Hmr RSHFT A  &Hmr RALT I   &none
 &none       &kp Z            &kp K              &kp J             &kp G         &kp W                                     &kp F12         &kp F14                                         &kp X       &kp H         &kp COMMA     &kp EXCL      &kp QUESTION  &none
-&kp F5      &kp F4           &kp F3             &kp F2            &kp F1                &Spc 1 SPACE           &kp ENTER  &kp F13         &kp F15       &Caps      &Bspc 2 BACKSPACE                  &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
+&kp F5      &kp F4           &kp F3             &kp F2            &kp F1                &Spc 1 SPACE           &kp ENTER  &kp F13         &kp F15       &Caps2     &Bspc 2 BACKSPACE                  &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
             >;
         };
 
