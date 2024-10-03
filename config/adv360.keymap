@@ -165,11 +165,11 @@
 
         layer_qwerty {
             bindings = <
-&trans            &kp N5  &kp N4  &kp N3  &kp N2  &kp N1  &none                                                                       &to 0              &kp N6  &kp N7                &kp N8             &kp N9              &kp N0               &kp MINUS
-&kp SINGLE_QUOTE  &kp Q   &kp W   &kp E   &kp R   &kp T   &none                                                                       &none              &kp Y   &kp U                 &kp I              &kp O               &kp P                &kp LBKT
-&kp LEFT_CONTROL  &kp A   &kp S   &kp D   &kp F   &kp G   &none         &kp TAB    &kp ESCAPE      &kp LS(LG(LC(LA(A))))  &caps_word  &trans             &kp H   &Hmr RIGHT_CONTROL J  &Hmr RIGHT_META K  &Hmr RIGHT_SHIFT L  &Hmr RIGHT_ALT SEMI  &kp RIGHT_META
-&kp LSHFT         &kp Z   &kp X   &kp C   &kp V   &kp B                            &trans          &kp LS(LA(LC(LG(B))))                                 &kp N   &kp M                 &kp COMMA          &kp DOT             &kp FSLH             &kp RSHFT
-&trans            &trans  &trans  &trans  &trans          &Spc 1 SPACE  &kp ENTER  &trans          &trans                 &Caps       &Bspc 2 BACKSPACE          &trans                &trans             &trans              &trans               &trans
+&trans            &kp N5  &kp N4  &kp N3  &kp N2  &kp N1  &none                                                                       &to 0              &kp N6  &kp N7  &kp N8  &kp N9     &kp N0     &kp MINUS
+&kp SINGLE_QUOTE  &none   &kp Q   &kp W   &kp E   &kp R   &none                                                                       &none              &kp T   &kp Y   &kp U   &kp I      &kp O      &kp P
+&kp LEFT_CONTROL  &none   &kp A   &kp S   &kp D   &kp F   &none         &kp TAB    &kp ESCAPE      &kp LS(LG(LC(LA(A))))  &caps_word  &trans             &kp G   &kp H   &kp J   &kp K      &kp L      &kp RIGHT_META
+&kp LSHFT         &none   &kp Z   &kp X   &kp C   &kp V                            &trans          &kp LS(LA(LC(LG(B))))                                 &kp B   &kp N   &kp M   &kp COMMA  &kp COMMA  &kp RSHFT
+&trans            &trans  &trans  &trans  &trans          &Spc 1 SPACE  &kp ENTER  &trans          &trans                 &Caps       &Bspc 2 BACKSPACE          &trans  &trans  &trans     &trans     &trans
             >;
         };
     };
