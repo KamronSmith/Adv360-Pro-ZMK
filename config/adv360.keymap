@@ -9,9 +9,12 @@
  * edit it directly.
  */
 
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &sk { quick-release; };
 
@@ -139,17 +142,17 @@
 &kp APOS           &kp V            &kp M              &kp L         &kp C         &kp P         &kp LS(LA(LC(LG(C))))                                                                           &kp LS(LG(LA(LC(X))))  &kp B       &kp F         &kp O         &kp U         &kp Q         &kp SEMI
 &kp DOUBLE_QUOTES  &Hml LEFT_ALT S  &Hml LEFT_SHIFT T  &Hml LMETA R  &Hml LCTRL D  &kp Y         &kp LS(LA(LC(LG(W))))  &kp TAB    &kp ESCAPE                 &kp LS(LA(LC(LG(A))))  &caps_word  &kp LS(LC(LG(LA(F))))  &kp PERIOD  &Hmr RCTRL N  &Hmr RMETA E  &Hmr RSHFT A  &Hmr RALT I   &kp MINUS
 &none              &kp Z            &kp K              &kp J         &kp G         &kp W                                           &kp LS(LC(LG(LA(D))))      &kp LS(LG(LA(LC(B))))                                     &kp X       &kp H         &kp COMMA     &kp EXCL      &kp QUESTION  &none
-&kp F5             &kp F4           &kp F3             &kp F2        &kp F1                      &Spc 1 SPACE           &kp ENTER  &to 3                      &none                  &Caps       &Bspc 2 BACKSPACE                  &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
+&kp F5             &kp F4           &kp F3             &kp F2        &kp F1                      &Spc 1 SPACE           &kp ENTER  &to 3                      &out OUT_TOG           &Caps       &Bspc 2 BACKSPACE                  &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
             >;
         };
 
         layer_extend {
             bindings = <
-&bootloader  &none         &none      &none         &none          &none  &none                                  &none      &none           &none      &none         &none      &none          &bootloader
-&none        &none         &none      &kp K_BACK    &kp K_FORWARD  &none  &none                                  &none      &kp HOME        &kp PG_DN  &kp PG_UP     &kp END    &none          &none
-&none        &kp LEFT_ALT  &kp LSHFT  &kp LEFT_GUI  &kp LCTRL      &none  &none  &none  &none      &none  &none  &none      &kp LEFT_ARROW  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &kp BACKSPACE  &none
-&none        &none         &none      &none         &none          &none                &none      &none                    &none           &mkp MB1   &mkp MB2      &none      &none          &none
-&none        &none         &none      &none         &none                 &none  &none  &none      &none  &none  &kp ENTER                  &pas3      &none         &none      &none          &none
+&bootloader  &none         &none      &bt BT_CLR    &bt BT_PRV     &bt BT_NXT  &none                                  &none      &none           &none      &none         &none      &none          &bootloader
+&none        &none         &none      &kp K_BACK    &kp K_FORWARD  &none       &none                                  &none      &kp HOME        &kp PG_DN  &kp PG_UP     &kp END    &none          &none
+&none        &kp LEFT_ALT  &kp LSHFT  &kp LEFT_GUI  &kp LCTRL      &none       &none  &none  &none      &none  &none  &none      &kp LEFT_ARROW  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &kp BACKSPACE  &none
+&none        &none         &none      &none         &none          &none                     &none      &none                    &none           &mkp MB1   &mkp MB2      &none      &none          &none
+&none        &none         &none      &none         &none                      &none  &none  &none      &none  &none  &kp ENTER                  &pas3      &none         &none      &none          &none
             >;
         };
 
