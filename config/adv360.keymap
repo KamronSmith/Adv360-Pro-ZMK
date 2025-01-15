@@ -125,7 +125,7 @@
             bindings = <&kp LEFT_BRACKET>, <&kp N5>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RCTL)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         num_four: num_four {
