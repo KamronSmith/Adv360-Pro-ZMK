@@ -245,19 +245,10 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        colon: colon {
-            compatible = "zmk,behavior-mod-morph";
-            label = "COLON";
-            bindings = <&kp COLON>, <&kp BACKSLASH>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
         dash: dash {
             compatible = "zmk,behavior-mod-morph";
             label = "DASH";
-            bindings = <&kp MINUS>, <&kp SLASH>;
+            bindings = <&kp KP_SUBTRACT>, <&kp SLASH>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -266,7 +257,7 @@
         quotes: quotes {
             compatible = "zmk,behavior-mod-morph";
             label = "QUOTES";
-            bindings = <&kp DOUBLE_QUOTES>, <&kp PLUS>;
+            bindings = <&kp DOUBLE_QUOTES>, <&kp SINGLE_QUOTE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -317,11 +308,11 @@
 
         default_layer {
             bindings = <
-&tilde          &num_five        &num_four          &num_three    &num_two      &num_one  &carat                                                                                                     &hash                  &num_zero   &num_six      &num_seven    &num_eight    &num_nine     &percent
-&underscore     &kp V            &kp M              &kp L         &kp C         &kp P     &kp LS(LA(LC(LG(C))))                                                                                      &kp LS(LG(LA(LC(X))))  &kp B       &kp F         &kp O         &kp U         &kp Q         &colon
-&quotes         &Hml LEFT_ALT S  &Hml LEFT_SHIFT T  &Hml LMETA R  &Hml LCTRL D  &kp Y     &kp LS(LA(LC(LG(W))))  &kp TAB    &kp ESCAPE                 &caps_word             &kp LS(LA(LC(LG(A))))  &kp LS(LC(LG(LA(F))))  &kp PERIOD  &Hmr RCTRL N  &Hmr RMETA E  &Hmr RSHFT A  &Hmr RALT I   &dash
-&kp APOSTROPHE  &kp Z            &kp K              &kp J         &kp G         &kp W                                       &kp LS(LC(LG(LA(D))))      &kp LS(LG(LA(LC(B))))                                                &kp X       &kp H         &comma        &exclamation  &kp QUESTION  &kp SEMICOLON
-&kp F5          &kp F4           &kp F3             &kp F2        &kp F1                  &Spc 1 SPACE           &kp ENTER  &to 2                      &out OUT_TOG           &Caps                  &kp BACKSPACE                      &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
+&tilde       &num_five        &num_four          &num_three    &num_two      &num_one  &carat                                                                                                     &hash                  &num_zero   &num_six      &num_seven    &num_eight    &num_nine     &percent
+&underscore  &kp V            &kp M              &kp L         &kp C         &kp P     &kp LS(LA(LC(LG(C))))                                                                                      &kp LS(LG(LA(LC(X))))  &kp B       &kp F         &kp O         &kp U         &kp Q         &kp SEMI
+&quotes      &Hml LEFT_ALT S  &Hml LEFT_SHIFT T  &Hml LMETA R  &Hml LCTRL D  &kp Y     &kp LS(LA(LC(LG(W))))  &kp TAB    &kp ESCAPE                 &caps_word             &kp LS(LA(LC(LG(A))))  &kp LS(LC(LG(LA(F))))  &kp PERIOD  &Hmr RCTRL N  &Hmr RMETA E  &Hmr RSHFT A  &Hmr RALT I   &dash
+&kp PLUS     &kp Z            &kp K              &kp J         &kp G         &kp W                                       &kp LS(LC(LG(LA(D))))      &kp LS(LG(LA(LC(B))))                                                &kp X       &kp H         &comma        &exclamation  &kp QUESTION  &kp BACKSLASH
+&kp F5       &kp F4           &kp F3             &kp F2        &kp F1                  &Spc 1 SPACE           &kp ENTER  &to 2                      &out OUT_TOG           &Caps                  &kp BACKSPACE                      &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
             >;
         };
 
