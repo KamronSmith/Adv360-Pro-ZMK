@@ -89,7 +89,7 @@
             bindings = <&sk LSHFT>, <&caps_word>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LCTL|MOD_RCTL|MOD_LSFT|MOD_RSFT)>;
         };
 
         num_one: num_one {
