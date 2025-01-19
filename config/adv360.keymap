@@ -113,7 +113,7 @@
         num_three: num_three {
             compatible = "zmk,behavior-mod-morph";
             label = "NUM_THREE";
-            bindings = <&kp RIGHT_BRACE>, <&kp NUMBER_3>;
+            bindings = <&kp LEFT_BRACE>, <&kp NUMBER_3>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -131,7 +131,7 @@
         num_four: num_four {
             compatible = "zmk,behavior-mod-morph";
             label = "NUM_FOUR";
-            bindings = <&kp LEFT_BRACE>, <&kp NUMBER_4>;
+            bindings = <&kp RIGHT_BRACE>, <&kp NUMBER_4>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -149,7 +149,7 @@
         num_six: num_six {
             compatible = "zmk,behavior-mod-morph";
             label = "NUM_SIX";
-            bindings = <&kp RIGHT_PARENTHESIS>, <&kp NUMBER_6>;
+            bindings = <&kp SLASH>, <&kp NUMBER_6>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -158,7 +158,7 @@
         num_seven: num_seven {
             compatible = "zmk,behavior-mod-morph";
             label = "NUM_SEVEN";
-            bindings = <&kp SLASH>, <&kp N7>;
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp N7>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -262,6 +262,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        dot: dot {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT";
+            bindings = <&kp PERIOD>, <&kp PERIOD>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -308,11 +317,11 @@
 
         default_layer {
             bindings = <
-&tilde       &num_five        &num_four          &num_three    &num_two      &num_one  &carat                                                                                                     &hash                  &num_zero   &num_six      &num_seven    &num_eight    &num_nine     &percent
-&underscore  &kp V            &kp M              &kp L         &kp C         &kp P     &kp LS(LA(LC(LG(C))))                                                                                      &kp LS(LG(LA(LC(X))))  &kp B       &kp F         &kp O         &kp U         &kp Q         &kp SEMI
-&quotes      &Hml LEFT_ALT S  &Hml LEFT_SHIFT T  &Hml LMETA R  &Hml LCTRL D  &kp Y     &kp LS(LA(LC(LG(W))))  &kp TAB    &kp ESCAPE                 &none                  &kp LS(LA(LC(LG(A))))  &kp LS(LC(LG(LA(F))))  &kp PERIOD  &Hmr RCTRL N  &Hmr RMETA E  &Hmr RSHFT A  &Hmr RALT I   &dash
-&kp PLUS     &kp Z            &kp K              &kp J         &kp G         &kp W                                       &kp LS(LC(LG(LA(D))))      &kp LS(LG(LA(LC(B))))                                                &kp X       &kp H         &comma        &exclamation  &kp QUESTION  &kp BACKSLASH
-&kp F5       &kp F4           &kp F3             &kp F2        &kp F1                  &Spc 1 SPACE           &kp ENTER  &to 2                      &out OUT_TOG           &Caps                  &kp BACKSPACE                      &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
+&tilde       &num_five        &num_four          &num_three    &num_two      &num_one  &carat                                                                                                     &hash                  &num_zero  &num_six      &num_seven    &num_eight    &num_nine     &percent
+&underscore  &kp V            &kp M              &kp L         &kp C         &kp P     &kp LS(LA(LC(LG(C))))                                                                                      &kp LS(LG(LA(LC(X))))  &kp B      &kp F         &kp O         &kp U         &kp Q         &kp SEMI
+&quotes      &Hml LEFT_ALT S  &Hml LEFT_SHIFT T  &Hml LMETA R  &Hml LCTRL D  &kp Y     &kp LS(LA(LC(LG(W))))  &kp TAB    &kp ESCAPE                 &none                  &kp LS(LA(LC(LG(A))))  &kp LS(LC(LG(LA(F))))  &dot       &Hmr RCTRL N  &Hmr RMETA E  &Hmr RSHFT A  &Hmr RALT I   &dash
+&kp PLUS     &kp Z            &kp K              &kp J         &kp G         &kp W                                       &kp LS(LC(LG(LA(D))))      &kp LS(LG(LA(LC(B))))                                                &kp X      &kp H         &comma        &exclamation  &kp QUESTION  &kp BACKSLASH
+&kp F5       &kp F4           &kp F3             &kp F2        &kp F1                  &Spc 1 SPACE           &kp ENTER  &to 2                      &out OUT_TOG           &Caps                  &kp BACKSPACE                     &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
             >;
         };
 
