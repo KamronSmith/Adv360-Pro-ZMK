@@ -209,10 +209,10 @@
             mods = <(MOD_LSFT)>;
         };
 
-        tilde: tilde {
+        dollar: dollar {
             compatible = "zmk,behavior-mod-morph";
-            label = "TILDE";
-            bindings = <&kp TILDE>, <&kp DOLLAR>;
+            label = "DOLLAR";
+            bindings = <&kp DOLLAR>, <&kp TILDE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -317,7 +317,7 @@
 
         default_layer {
             bindings = <
-&tilde       &num_five        &num_four          &num_three    &num_two      &num_one  &carat                                                                                            &hash                  &num_zero  &num_six      &num_seven    &num_eight    &num_nine     &percent
+&dollar      &num_five        &num_four          &num_three    &num_two      &num_one  &carat                                                                                            &hash                  &num_zero  &num_six      &num_seven    &num_eight    &num_nine     &percent
 &underscore  &kp V            &kp M              &kp L         &kp C         &kp P     &kp LS(LA(LC(LG(C))))                                                                             &kp LS(LG(LA(LC(X))))  &kp B      &kp F         &kp O         &kp U         &kp Q         &kp SEMI
 &quotes      &Hml LEFT_ALT S  &Hml LEFT_SHIFT T  &Hml LMETA R  &Hml LCTRL D  &kp Y     &kp LS(LA(LC(LG(W))))  &kp TAB    &kp ESCAPE                 &none         &kp LS(LA(LC(LG(A))))  &kp LS(LC(LG(LA(F))))  &dot       &Hmr RCTRL N  &Hmr RMETA E  &Hmr RSHFT A  &Hmr RALT I   &dash
 &kp PLUS     &kp Z            &kp K              &kp J         &kp G         &kp W                                       &kp LS(LC(LG(LA(D))))      &kp F12                                                     &kp X      &kp H         &comma        &exclamation  &kp QUESTION  &kp BACKSLASH
@@ -340,7 +340,7 @@
 &none             &kp N5          &kp N4  &kp N3  &kp N2  &kp N1  &none                                                                                          &none          &kp N0  &kp N6    &kp N7    &kp N8        &kp N9     &kp MINUS
 &kp SINGLE_QUOTE  &none           &kp Q   &kp W   &kp E   &kp R   &none                                                                                          &none          &kp T   &kp Y     &kp U     &kp I         &kp O      &kp P
 &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp A   &kp S   &kp D   &kp F   &none      &kp TAB    &kp ESCAPE                 &caps_word             &kp LA(LC(LG(LS(A))))  &trans         &kp G   &kp H     &kp J     &kp K         &kp L      &kp RIGHT_META
-&none             &none           &kp Z   &kp X   &kp C   &kp V                         &kp LS(LG(LC(LA(D))))      &kp LS(LA(LC(LG(B))))                                        &kp B   &kp N     &kp M     &kp COMMA     &kp COMMA  &kp RSHFT
+&kp LEFT_ALT      &none           &kp Z   &kp X   &kp C   &kp V                         &kp LS(LG(LC(LA(D))))      &kp LS(LA(LC(LG(B))))                                        &kp B   &kp N     &kp M     &kp COMMA     &kp COMMA  &kp RSHFT
 &trans            &trans          &trans  &trans  &trans          &kp SPACE  &kp ENTER  &to 0                      &trans                 &Caps                  &kp BACKSPACE          &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
             >;
         };
