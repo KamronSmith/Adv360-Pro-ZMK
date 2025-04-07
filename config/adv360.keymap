@@ -271,6 +271,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        colon: colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLON";
+            bindings = <&kp COLON>, <&kp SEMI>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -318,7 +327,7 @@
         default_layer {
             bindings = <
 &dollar      &num_five        &num_four          &num_three    &num_two      &num_one  &carat                                                                                            &hash                  &num_zero  &num_six      &num_seven    &num_eight    &num_nine     &percent
-&underscore  &kp V            &kp M              &kp L         &kp C         &kp P     &kp LS(LA(LC(LG(C))))                                                                             &kp LS(LG(LA(LC(X))))  &kp B      &kp F         &kp O         &kp U         &kp Q         &kp SEMI
+&underscore  &kp V            &kp M              &kp L         &kp C         &kp P     &kp LS(LA(LC(LG(C))))                                                                             &kp LS(LG(LA(LC(X))))  &kp B      &kp F         &kp O         &kp U         &kp Q         &colon
 &quotes      &Hml LEFT_ALT S  &Hml LEFT_SHIFT T  &Hml LMETA R  &Hml LCTRL D  &kp Y     &kp LS(LA(LC(LG(W))))  &kp TAB    &kp ESCAPE                 &none         &kp LS(LA(LC(LG(A))))  &kp LS(LC(LG(LA(F))))  &dot       &Hmr RCTRL N  &Hmr RMETA E  &Hmr RSHFT A  &Hmr RALT I   &dash
 &kp PLUS     &kp Z            &kp K              &kp J         &kp G         &kp W                                       &kp LS(LC(LG(LA(D))))      &kp F12                                                     &kp X      &kp H         &comma        &exclamation  &kp QUESTION  &kp BACKSLASH
 &kp F5       &kp F4           &kp F3             &kp F2        &kp F1                  &Spc 1 SPACE           &kp ENTER  &to 2                      &out OUT_TOG  &Caps                  &kp BACKSPACE                     &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
