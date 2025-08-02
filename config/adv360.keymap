@@ -239,7 +239,7 @@
         underscore: underscore {
             compatible = "zmk,behavior-mod-morph";
             label = "UNDERSCORE";
-            bindings = <&kp UNDER>, <&kp PIPE>;
+            bindings = <&kp UNDER>, <&kp UNDERSCORE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -248,7 +248,7 @@
         dash: dash {
             compatible = "zmk,behavior-mod-morph";
             label = "DASH";
-            bindings = <&kp KP_SUBTRACT>, <&kp SLASH>;
+            bindings = <&kp MINUS>, <&kp MINUS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
