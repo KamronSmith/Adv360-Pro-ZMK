@@ -325,11 +325,11 @@
 
         default_layer {
             bindings = <
-&dollar     &num_five  &num_four  &num_three  &num_two   &num_one  &carat                                                                      &hash          &num_zero  &num_six      &num_seven  &num_eight    &num_nine     &percent
-&kp ESCAPE  &kp V      &kp M      &kp L       &kp C      &kp P     &kp F3                                                                      &kp F4         &kp B      &kp F         &kp O       &kp U         &kp Q         &colon
-&kp TAB     &kp S      &kp T      &kp R       &kp D      &kp Y     &kp F1     &kp LCTRL  &kp LEFT_META              &kp RIGHT_META  &kp RCTRL  &kp F2         &dot       &kp N         &kp E       &kp A         &kp I         &dash
-&kp LSHFT   &kp Z      &kp K      &kp J       &kp G      &kp W                           &kp LS(LC(LG(LA(D))))      &kp HOME                                  &kp X      &kp H         &comma      &exclamation  &kp QUESTION  &kp RSHIFT
-&kp F5      &kp F4     &kp F3     &kp LEFT    &kp RIGHT            &kp SPACE  &kp ENTER  &to 2                      &kp END         &Caps      &kp BACKSPACE             &kp UP_ARROW  &kp DOWN    &kp F8        &kp F9        &kp F10
+&dollar     &num_five  &num_four  &num_three  &num_two   &num_one  &carat                                                              &hash          &num_zero  &num_six      &num_seven  &num_eight    &num_nine     &percent
+&kp ESCAPE  &kp V      &kp M      &kp L       &kp C      &kp P     &kp F3                                                              &kp F4         &kp B      &kp F         &kp O       &kp U         &kp Q         &colon
+&kp TAB     &kp S      &kp T      &kp R       &kp D      &kp Y     &kp F1     &kp LCTRL  &kp LEFT_META      &kp RIGHT_META  &kp RCTRL  &kp F2         &dot       &kp N         &kp E       &kp A         &kp I         &dash
+&kp LSHFT   &kp Z      &kp K      &kp J       &kp G      &kp W                           &none              &kp HOME                                  &kp X      &kp H         &comma      &exclamation  &kp QUESTION  &kp RSHIFT
+&kp F5      &kp F4     &kp F3     &kp LEFT    &kp RIGHT            &kp SPACE  &kp ENTER  &to 2              &kp END         &Caps      &kp BACKSPACE             &kp UP_ARROW  &kp DOWN    &kp F8        &kp F9        &kp F10
             >;
         };
 
