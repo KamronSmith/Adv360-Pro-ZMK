@@ -193,7 +193,7 @@
         comma: comma {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA";
-            bindings = <&kp COMMA>, <&kp LESS_THAN>;
+            bindings = <&kp COMMA>, <&kp COMMA>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -202,7 +202,7 @@
         exclamation: exclamation {
             compatible = "zmk,behavior-mod-morph";
             label = "EXCLAMATION";
-            bindings = <&kp EXCL>, <&kp GREATER_THAN>;
+            bindings = <&kp EXCL>, <&kp EXCL>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
