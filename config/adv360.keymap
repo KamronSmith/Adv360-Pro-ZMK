@@ -121,7 +121,7 @@
         num_five: num_five {
             compatible = "zmk,behavior-mod-morph";
             label = "NUM_FIVE";
-            bindings = <&kp LEFT_BRACKET>, <&kp N5>;
+            bindings = <&kp LEFT_BRACKET>, <&kp PLUS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
