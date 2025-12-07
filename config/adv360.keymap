@@ -121,7 +121,7 @@
         num_five: num_five {
             compatible = "zmk,behavior-mod-morph";
             label = "NUM_FIVE";
-            bindings = <&kp PLUS>, <&kp NUMBER_4>;
+            bindings = <&kp SEMICOLON>, <&kp NUMBER_4>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -274,7 +274,7 @@
         colon: colon {
             compatible = "zmk,behavior-mod-morph";
             label = "COLON";
-            bindings = <&kp COLON>, <&kp SEMI>;
+            bindings = <&kp COLON>, <&kp COLON>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
