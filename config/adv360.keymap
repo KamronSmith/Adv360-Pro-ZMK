@@ -325,11 +325,11 @@
 
         default_layer {
             bindings = <
-&dollar      &num_five        &num_four          &num_three    &num_two      &num_one  &carat                                                                                   &hash             &num_zero  &num_six      &num_seven    &num_eight    &num_nine     &percent
-&underscore  &kp V            &kp M              &kp L         &kp C         &kp P     &kp AT                                                                                   &kp AMPERSAND     &kp B      &kp F         &kp O         &kp U         &kp Q         &colon
-&quotes      &Hml LEFT_ALT S  &Hml LEFT_SHIFT T  &Hml LMETA R  &Hml LCTRL D  &kp Y     &kp LESS_THAN  &kp TAB    &kp ESCAPE                    &none                     &none  &kp GREATER_THAN  &dot       &Hmr RCTRL N  &Hmr RMETA E  &Hmr RSHFT A  &Hmr RALT I   &dash
-&kp PLUS     &kp Z            &kp K              &kp J         &kp G         &kp W                               &kp LS(LC(LA(LEFT_GUI)))      &kp LS(LA(LC(LEFT_GUI)))                           &kp X      &kp H         &comma        &exclamation  &kp QUESTION  &kp BACKSLASH
-&kp F5       &kp F4           &kp F3             &kp F2        &kp F1                  &Spc 1 SPACE   &kp ENTER  &to 2                         &kp END                   &Caps  &kp BACKSPACE                &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
+&kp EQUAL       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &carat                                                                                       &hash          &kp NUMBER_6  &kp N7        &kp N8      &kp N9            &kp N0             &kp MINUS
+&kp ESCAPE      &kp Q         &kp W         &kp E         &kp R         &kp T   &kp AT                                                                                       &kp AMPERSAND  &kp Y         &kp U         &kp I       &kp O             &kp P              &kp BACKSLASH
+&kp TAB         &kp A         &kp S         &kp D         &kp F         &kp G   &kp LESS_THAN  &kp LCTRL  &kp LMETA                     &kp RMETA                 &kp RCTRL  &pas3          &kp H         &kp J         &kp K       &kp L             &kp SEMI           &kp SINGLE_QUOTE
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V         &kp B                             &kp LS(LC(LA(LEFT_GUI)))      &kp LS(LA(LC(LEFT_GUI)))                            &kp N         &kp M         &kp PERIOD  &kp COMMA         &kp SLASH          &kp RSHFT
+&kp F5          &kp F4        &kp CAPSLOCK  &kp LEFT      &kp RIGHT             &Spc 1 SPACE   &kp ENTER  &to 2                         &kp END                   &Caps      &kp BACKSPACE                &kp UP_ARROW  &kp DOWN    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F10
             >;
         };
 
