@@ -274,7 +274,7 @@
         colon: colon {
             compatible = "zmk,behavior-mod-morph";
             label = "COLON";
-            bindings = <&kp COLON>, <&kp COLON>;
+            bindings = <&kp COLON>, <&kp SEMI>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
