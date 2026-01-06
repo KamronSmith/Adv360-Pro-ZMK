@@ -329,7 +329,7 @@
 &underscore  &kp V            &kp M              &kp L         &kp C         &kp P     &kp AT                                                                                   &kp AMPERSAND     &kp B      &kp F         &kp O         &kp U         &kp Q         &colon
 &quotes      &Hml LEFT_ALT S  &Hml LEFT_SHIFT T  &Hml LMETA R  &Hml LCTRL D  &kp Y     &kp LESS_THAN  &kp TAB    &kp ESCAPE                    &none                     &none  &kp GREATER_THAN  &dot       &Hmr RCTRL N  &Hmr RMETA E  &Hmr RSHFT A  &Hmr RALT I   &dash
 &kp PLUS     &kp Z            &kp K              &kp J         &kp G         &kp W                               &kp LS(LC(LA(LEFT_GUI)))      &kp LS(LA(LC(LEFT_GUI)))                           &kp X      &kp H         &comma        &exclamation  &kp QUESTION  &kp BACKSLASH
-&kp F5       &kp F4           &kp F3             &kp F2        &kp F1                  &Spc 1 SPACE   &kp ENTER  &to 2                         &kp END                   &Caps  &kp BACKSPACE                &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
+&kp F5       &kp F4           &kp F3             &kp LEFT      &kp RIGHT               &Spc 1 SPACE   &kp ENTER  &to 2                         &kp END                   &Caps  &kp BACKSPACE                &kp UP_ARROW  &kp DOWN      &kp F8        &kp F9        &kp F10
             >;
         };
 
