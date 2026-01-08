@@ -121,7 +121,7 @@
         num_five: num_five {
             compatible = "zmk,behavior-mod-morph";
             label = "NUM_FIVE";
-            bindings = <&kp LEFT_BRACKET>, <&kp N5>;
+            bindings = <&kp PLUS>, <&kp N5>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -130,7 +130,7 @@
         num_four: num_four {
             compatible = "zmk,behavior-mod-morph";
             label = "NUM_FOUR";
-            bindings = <&kp RIGHT_BRACE>, <&kp NUMBER_4>;
+            bindings = <&kp LEFT_BRACKET>, <&kp NUMBER_4>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -148,7 +148,7 @@
         num_six: num_six {
             compatible = "zmk,behavior-mod-morph";
             label = "NUM_SIX";
-            bindings = <&kp SLASH>, <&kp NUMBER_6>;
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp NUMBER_6>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -157,7 +157,7 @@
         num_seven: num_seven {
             compatible = "zmk,behavior-mod-morph";
             label = "NUM_SEVEN";
-            bindings = <&kp RIGHT_PARENTHESIS>, <&kp N7>;
+            bindings = <&kp RIGHT_BRACE>, <&kp N7>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -175,7 +175,7 @@
         num_nine: num_nine {
             compatible = "zmk,behavior-mod-morph";
             label = "NUM_NINE";
-            bindings = <&kp EXCLAMATION>, <&kp N9>;
+            bindings = <&kp SLASH>, <&kp N9>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
