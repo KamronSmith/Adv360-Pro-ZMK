@@ -325,11 +325,11 @@
 
         default_layer {
             bindings = <
-&dollar         &num_five  &num_four     &num_three  &num_two   &num_one  &carat                                                                               &hash          &num_zero  &num_six      &num_seven  &num_eight    &num_nine      &percent
-&kp ESCAPE      &kp V      &kp M         &kp L       &kp C      &kp P     &kp F3                                                                               &kp F4         &kp B      &kp F         &kp O       &kp U         &kp Q          &colon
-&kp TAB         &kp S      &kp T         &kp R       &kp D      &kp Y     &kp F1     &kp LCTRL  &kp LEFT_META      &kp LEFT_GUI  &kp RCTRL                     &to 2          &dot       &kp N         &kp E       &kp A         &kp I          &dash
-&kp LEFT_SHIFT  &kp Z      &kp K         &kp J       &kp G      &kp W                           &kp PG_UP          &kp HOME                                                   &kp X      &kp H         &comma      &exclamation  &kp QUESTION   &kp LEFT_SHIFT
-&bootloader     &none      &kp LEFT_ALT  &kp LEFT    &kp RIGHT            &kp SPACE  &kp ENTER  &kp PAGE_DOWN      &kp END       &kp LA(LS(LG(LEFT_CONTROL)))  &kp BACKSPACE             &kp UP_ARROW  &kp DOWN    &kp PLUS      &kp BACKSLASH  &pas3
+&dollar         &num_five  &num_four     &num_three  &num_two   &num_one  &carat                                                                                   &hash             &num_zero  &num_six      &num_seven  &num_eight    &num_nine      &percent
+&kp ESCAPE      &kp V      &kp M         &kp L       &kp C      &kp P     &kp AT                                                                                   &kp AMPERSAND     &kp B      &kp F         &kp O       &kp U         &kp Q          &colon
+&kp TAB         &kp S      &kp T         &kp R       &kp D      &kp Y     &kp LESS_THAN  &kp LCTRL  &kp LEFT_META      &kp LEFT_GUI  &kp RCTRL                     &kp GREATER_THAN  &dot       &kp N         &kp E       &kp A         &kp I          &dash
+&kp LEFT_SHIFT  &kp Z      &kp K         &kp J       &kp G      &kp W                               &kp PG_UP          &kp HOME                                                      &kp X      &kp H         &comma      &exclamation  &kp QUESTION   &kp LEFT_SHIFT
+&bootloader     &to 2      &kp LEFT_ALT  &kp LEFT    &kp RIGHT            &kp SPACE      &kp ENTER  &kp PAGE_DOWN      &kp END       &kp LA(LS(LG(LEFT_CONTROL)))  &kp BACKSPACE                &kp UP_ARROW  &kp DOWN    &kp PLUS      &kp BACKSLASH  &pas3
             >;
         };
 
