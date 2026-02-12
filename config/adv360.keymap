@@ -324,11 +324,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &carat                                                                  &hash          &kp NUMBER_6  &kp N7        &kp N8      &kp N9            &kp N0             &kp MINUS
-&kp ESCAPE      &kp Q         &kp W         &kp E         &kp R         &kp T   &kp AT                                                                  &kp AMPERSAND  &kp Y         &kp U         &kp I       &kp O             &kp P              &kp BACKSLASH
-&kp LMETA       &kp A         &kp S         &kp D         &kp F         &kp G   &bootloader  &kp LCTRL  &kp TAB            &kp SINGLE_QUOTE  &kp RCTRL  &pas3          &kp H         &kp J         &kp K       &kp L             &kp SEMI           &kp RMETA
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C         &kp V         &kp B                           &kp PG_UP          &kp HOME                                    &kp N         &kp M         &kp PERIOD  &kp COMMA         &kp SLASH          &kp RSHFT
-&kp F5          &kp F4        &kp CAPSLOCK  &kp LEFT      &kp RIGHT             &kp SPACE    &kp ENTER  &kp PAGE_DOWN      &kp END           &Caps      &kp BACKSPACE                &kp UP_ARROW  &kp DOWN    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F10
+&kp EQUAL       &kp NUMBER_1  &kp NUMBER_2           &kp NUMBER_3  &kp NUMBER_4  &kp N5  &carat                                                                  &hash          &kp NUMBER_6  &kp N7        &kp N8      &kp N9            &kp N0             &kp MINUS
+&kp ESCAPE      &kp Q         &kp W                  &kp E         &kp R         &kp T   &kp AT                                                                  &kp AMPERSAND  &kp Y         &kp U         &kp I       &kp O             &kp P              &kp BACKSLASH
+&kp LMETA       &kp A         &kp S                  &kp D         &kp F         &kp G   &bootloader  &kp LCTRL  &kp TAB            &kp SINGLE_QUOTE  &kp RCTRL  &pas3          &kp H         &kp J         &kp K       &kp L             &kp SEMI           &kp RMETA
+&kp LEFT_SHIFT  &kp Z         &kp X                  &kp C         &kp V         &kp B                           &kp PG_UP          &kp HOME                                    &kp N         &kp M         &kp PERIOD  &kp COMMA         &kp SLASH          &kp RSHFT
+&kp F5          &kp F4        &kp LS(LA(LG(LCTRL)))  &kp LEFT      &kp RIGHT             &kp SPACE    &kp ENTER  &kp PAGE_DOWN      &kp END           &Caps      &kp BACKSPACE                &kp UP_ARROW  &kp DOWN    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F10
             >;
         };
     };
