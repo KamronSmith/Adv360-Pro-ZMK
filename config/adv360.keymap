@@ -329,7 +329,7 @@
 &underscore  &kp V            &kp M                      &kp L         &kp C         &kp P     &kp AT                                                                   &kp AMPERSAND     &kp B      &kp F         &kp O         &kp U                       &kp Q         &kp SEMI
 &quotes      &Hml LEFT_ALT S  &Hml LEFT_SHIFT T          &Hml LMETA R  &Hml LCTRL D  &kp Y     &kp LESS_THAN  &kp TAB    &kp ESCAPE         &none     &kp C_PLAY_PAUSE  &kp GREATER_THAN  &dot       &Hmr RCTRL N  &Hmr RMETA E  &Hmr RSHFT A                &Hmr RALT I   &dash
 &kp PLUS     &kp Z            &kp K                      &kp J         &kp G         &kp W                               &kp PAGE_UP        &kp HOME                                      &kp X      &kp H         &comma        &exclamation                &kp QUESTION  &kp BACKSLASH
-&bootloader  &kp F4           &kp LS(LA(LC(LEFT_META)))  &kp LEFT      &kp RIGHT               &kp SPACE      &kp ENTER  &kp PAGE_DOWN      &kp END   &Caps             &kp BACKSPACE                &kp UP_ARROW  &kp DOWN      &kp RS(RA(RC(RIGHT_META)))  &to 2         &pas3
+&bootloader  &kp F4           &kp LS(LA(LC(LEFT_META)))  &kp LEFT      &kp RIGHT               &kp SPACE      &kp ENTER  &kp PAGE_DOWN      &kp F2    &Caps             &kp BACKSPACE                &kp UP_ARROW  &kp DOWN      &kp RS(RA(RC(RIGHT_META)))  &to 2         &pas3
             >;
         };
 
