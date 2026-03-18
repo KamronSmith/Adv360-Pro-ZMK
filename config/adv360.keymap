@@ -336,7 +336,7 @@
             bindings = <
 &dollar      &num_five  &num_four                     &num_three  &num_two   &num_one  &carat                                                             &hash             &num_zero  &num_six      &num_seven  &num_eight                    &num_nine      &percent
 &kp MINUS    &kp V      &kp M                         &kp L       &kp C      &kp P     &kp AT                                                             &kp AMPERSAND     &kp B      &kp F         &kp O       &kp U                         &kp Q          &kp SEMI
-&kp LMETA    &kp S      &kp T                         &kp R       &kp D      &kp Y     &kp LESS_THAN  &kp LCTRL  &kp TAB            &dash     &kp RCTRL   &kp GREATER_THAN  &dot       &kp N         &kp E       &kp A                         &kp I          &kp RMETA
+&kp LMETA    &kp S      &kp T                         &kp R       &kp D      &kp Y     &kp LESS_THAN  &kp LCTRL  &kp TAB            &quotes   &kp RCTRL   &kp GREATER_THAN  &dot       &kp N         &kp E       &kp A                         &kp I          &kp RMETA
 &Caps        &kp Z      &kp K                         &kp J       &kp G      &kp W                               &kp PG_UP          &kp HOME                                &kp X      &kp H         &comma      &exclamation                  &question      &Caps
 &bootloader  &kp PLUS   &kp LS(LA(LG(LEFT_CONTROL)))  &kp LEFT    &kp RIGHT            &kp SPACE      &kp ENTER  &kp PAGE_DOWN      &kp END   &kp DELETE  &kp BACKSPACE                &kp UP_ARROW  &kp DOWN    &kp LS(LA(LG(LEFT_CONTROL)))  &kp BACKSLASH  &pas3
             >;
