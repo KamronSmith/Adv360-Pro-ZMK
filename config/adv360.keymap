@@ -94,7 +94,7 @@
         num_one: num_one {
             compatible = "zmk,behavior-mod-morph";
             label = "NUM_ONE";
-            bindings = <&kp EQUAL>, <&kp NUMBER_1>;
+            bindings = <&kp NUMBER_1>, <&kp EQUAL>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -103,7 +103,7 @@
         num_two: num_two {
             compatible = "zmk,behavior-mod-morph";
             label = "NUM_TWO";
-            bindings = <&kp LEFT_PARENTHESIS>, <&kp NUMBER_2>;
+            bindings = <&kp NUMBER_2>, <&kp LEFT_PARENTHESIS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -112,7 +112,7 @@
         num_three: num_three {
             compatible = "zmk,behavior-mod-morph";
             label = "NUM_THREE";
-            bindings = <&kp LEFT_BRACE>, <&kp NUMBER_3>;
+            bindings = <&kp NUMBER_3>, <&kp LEFT_BRACE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -121,7 +121,7 @@
         num_five: num_five {
             compatible = "zmk,behavior-mod-morph";
             label = "NUM_FIVE";
-            bindings = <&kp PLUS>, <&kp N5>;
+            bindings = <&kp N5>, <&kp PLUS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -130,7 +130,7 @@
         num_four: num_four {
             compatible = "zmk,behavior-mod-morph";
             label = "NUM_FOUR";
-            bindings = <&kp LEFT_BRACKET>, <&kp NUMBER_4>;
+            bindings = <&kp NUMBER_4>, <&kp LEFT_BRACKET>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -139,7 +139,7 @@
         num_zero: num_zero {
             compatible = "zmk,behavior-mod-morph";
             label = "NUM_ZERO";
-            bindings = <&kp STAR>, <&kp N0>;
+            bindings = <&kp N0>, <&kp ASTERISK>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -148,7 +148,7 @@
         num_six: num_six {
             compatible = "zmk,behavior-mod-morph";
             label = "NUM_SIX";
-            bindings = <&kp RIGHT_PARENTHESIS>, <&kp NUMBER_6>;
+            bindings = <&kp NUMBER_6>, <&kp RIGHT_PARENTHESIS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -157,7 +157,7 @@
         num_seven: num_seven {
             compatible = "zmk,behavior-mod-morph";
             label = "NUM_SEVEN";
-            bindings = <&kp RIGHT_BRACE>, <&kp N7>;
+            bindings = <&kp N7>, <&kp RIGHT_BRACE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -166,7 +166,7 @@
         num_eight: num_eight {
             compatible = "zmk,behavior-mod-morph";
             label = "NUM_EIGHT";
-            bindings = <&kp RIGHT_BRACKET>, <&kp N8>;
+            bindings = <&kp N8>, <&kp RIGHT_BRACKET>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -175,7 +175,7 @@
         num_nine: num_nine {
             compatible = "zmk,behavior-mod-morph";
             label = "NUM_NINE";
-            bindings = <&kp SLASH>, <&kp N9>;
+            bindings = <&kp N9>, <&kp SLASH>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -334,11 +334,11 @@
 
         default_layer {
             bindings = <
-&dollar         &num_five  &num_four                     &num_three  &num_two   &num_one  &carat                                                              &hash             &num_zero  &num_six      &num_seven  &num_eight                    &num_nine      &percent
-&kp MINUS       &kp V      &kp M                         &kp L       &kp C      &kp P     &kp AT                                                              &kp AMPERSAND     &kp B      &kp F         &kp O       &kp U                         &kp Q          &kp SEMI
-&kp LMETA       &kp S      &kp T                         &kp R       &kp D      &kp Y     &kp LESS_THAN  &kp LCTRL  &kp TAB            &quotes     &kp RCTRL  &kp GREATER_THAN  &dot       &kp N         &kp E       &kp A                         &kp I          &kp RMETA
-&kp LEFT_SHIFT  &kp Z      &kp K                         &kp J       &kp G      &kp W                               &kp PG_UP          &kp ESCAPE                               &kp X      &kp H         &comma      &exclamation                  &question      &kp RIGHT_SHIFT
-&bootloader     &kp PLUS   &kp LS(LA(LG(LEFT_CONTROL)))  &kp LEFT    &kp RIGHT            &kp SPACE      &kp ENTER  &kp PAGE_DOWN      &kp END     &Caps      &kp BACKSPACE                &kp UP_ARROW  &kp DOWN    &kp LS(LA(LG(LEFT_CONTROL)))  &kp BACKSLASH  &pas3
+&dollar         &num_five  &num_four                     &num_three  &num_two   &num_one  &carat                                                                     &hash             &num_zero  &num_six      &num_seven  &num_eight                    &num_nine      &percent
+&kp MINUS       &kp V      &kp M                         &kp L       &kp C      &kp P     &kp AT                                                                     &kp AMPERSAND     &kp B      &kp F         &kp O       &kp U                         &kp Q          &kp SEMI
+&kp LEFT_ALT    &kp S      &kp T                         &kp R       &kp D      &kp Y     &kp LESS_THAN  &sk LEFT_CONTROL  &kp TAB            &quotes     &sk RCTRL  &kp GREATER_THAN  &dot       &kp N         &kp E       &kp A                         &kp I          &kp RIGHT_ALT
+&kp LEFT_SHIFT  &kp Z      &kp K                         &kp J       &kp G      &kp W                                      &kp PG_UP          &kp ESCAPE                               &kp X      &kp H         &comma      &exclamation                  &question      &kp RIGHT_SHIFT
+&bootloader     &kp PLUS   &kp LS(LA(LG(LEFT_CONTROL)))  &kp LEFT    &kp RIGHT            &kp SPACE      &kp ENTER         &kp PAGE_DOWN      &kp END     &Caps      &kp BACKSPACE                &kp UP_ARROW  &kp DOWN    &kp LS(LA(LG(LEFT_CONTROL)))  &kp BACKSLASH  &pas3
             >;
         };
 
