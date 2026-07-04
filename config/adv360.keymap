@@ -336,9 +336,9 @@
             bindings = <
 &dollar         &num_five  &num_four     &num_three  &num_two   &num_one  &carat                                                                      &hash             &num_zero  &num_six      &num_seven  &num_eight     &num_nine      &percent
 &kp MINUS       &kp V      &kp M         &kp L       &kp C      &kp P     &kp AT                                                                      &kp AMPERSAND     &kp B      &kp F         &kp O       &kp U          &kp Q          &kp SEMI
-&kp LEFT_ALT    &kp S      &kp T         &kp R       &kp D      &kp Y     &kp LESS_THAN  &kp LEFT_CONTROL  &kp TAB          &quotes  &kp RCTRL        &kp GREATER_THAN  &dot       &kp N         &kp E       &kp A          &kp I          &kp RIGHT_ALT
-&kp LEFT_SHIFT  &kp Z      &kp K         &kp J       &kp G      &kp W                                      &kp ESCAPE       &kp F11                                     &kp X      &kp H         &comma      &exclamation   &question      &kp RIGHT_SHIFT
-&none           &none      &kp LEFT_GUI  &kp LEFT    &kp RIGHT            &kp SPACE      &kp ENTER         &bootloader      &to 3    &kp RIGHT_SHIFT  &kp BACKSPACE                &kp UP_ARROW  &kp DOWN    &kp RIGHT_GUI  &kp BACKSLASH  &pas3
+&kp LEFT_ALT    &kp S      &kp T         &kp R       &kp D      &kp Y     &kp LESS_THAN  &kp LEFT_CONTROL  &kp TAB            &quotes     &kp RCTRL   &kp GREATER_THAN  &dot       &kp N         &kp E       &kp A          &kp I          &kp RIGHT_ALT
+&kp LEFT_SHIFT  &kp Z      &kp K         &kp J       &kp G      &kp W                                      &kp PG_UP          &kp ESCAPE                                &kp X      &kp H         &comma      &exclamation   &question      &kp RIGHT_SHIFT
+&bootloader     &none      &kp LEFT_GUI  &kp LEFT    &kp RIGHT            &kp SPACE      &kp ENTER         &kp PAGE_DOWN      &to 3       &caps_word  &kp BACKSPACE                &kp UP_ARROW  &kp DOWN    &kp RIGHT_GUI  &kp BACKSLASH  &pas3
             >;
         };
 
