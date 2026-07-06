@@ -324,11 +324,21 @@
 
         default_layer {
             bindings = <
-&dollar         &num_five   &num_four     &num_three  &num_two   &num_one  &carat                                                                       &hash             &num_zero  &num_six      &num_seven  &num_eight     &num_nine         &percent
-&kp MINUS       &kp Q       &kp W         &kp E       &kp R      &kp T     &kp AT                                                                       &kp AMPERSAND     &kp Y      &kp U         &kp I       &kp O          &kp P             &kp BACKSLASH
-&kp LEFT_ALT    &kp A       &kp S         &kp D       &kp F      &kp G     &kp LESS_THAN  &kp LCTRL  &kp TAB          &kp SINGLE_QUOTE  &kp RCTRL       &kp GREATER_THAN  &kp H      &kp J         &kp K       &kp L          &kp SEMI          &kp RIGHT_ALT
-&kp LEFT_SHIFT  &kp Z       &kp X         &kp C       &kp V      &kp B                               &kp ESCAPE       &kp HOME                                            &kp N      &kp M         &kp PERIOD  &kp COMMA      &kp SLASH         &kp RSHFT
-&none           &kp ESCAPE  &kp LEFT_GUI  &kp LEFT    &kp RIGHT            &kp SPACE      &kp ENTER  &bootloader      &none             &kp LEFT_SHIFT  &kp BACKSPACE                &kp UP_ARROW  &kp DOWN    &kp RIGHT_GUI  &kp SINGLE_QUOTE  &pas3
+&dollar         &num_five  &num_four     &num_three  &num_two   &num_one  &carat                                                                       &hash             &num_zero  &num_six      &num_seven  &num_eight     &num_nine         &percent
+&kp MINUS       &kp Q      &kp W         &kp E       &kp R      &kp T     &kp AT                                                                       &kp AMPERSAND     &kp Y      &kp U         &kp I       &kp O          &kp P             &kp BACKSLASH
+&kp LEFT_ALT    &kp A      &kp S         &kp D       &kp F      &kp G     &kp LESS_THAN  &kp LCTRL  &kp TAB          &kp SINGLE_QUOTE  &kp RCTRL       &kp GREATER_THAN  &kp H      &kp J         &kp K       &kp L          &kp SEMI          &kp RIGHT_ALT
+&kp LEFT_SHIFT  &kp Z      &kp X         &kp C       &kp V      &kp B                               &kp PAGE_UP      &kp HOME                                            &kp N      &kp M         &kp PERIOD  &kp COMMA      &kp SLASH         &kp RSHFT
+&bootloader     &none      &kp LEFT_GUI  &kp LEFT    &kp RIGHT            &kp SPACE      &kp ENTER  &bootloader      &none             &kp LEFT_SHIFT  &kp BACKSPACE                &kp UP_ARROW  &kp DOWN    &kp RIGHT_GUI  &kp SINGLE_QUOTE  &pas3
+            >;
+        };
+
+        layer_1 {
+            bindings = <
+&trans            &kp N5          &kp N4  &kp N3  &kp N2  &kp N1  &trans                                      &trans  &kp N0  &kp N6  &kp N7  &kp N8     &kp N9   &trans
+&trans            &trans          &kp Q   &kp W   &kp E   &kp R   &trans                                      &trans  &kp T   &kp Y   &kp U   &kp I      &kp O    &kp P
+&kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp A   &kp S   &kp D   &kp F   &trans  &trans  &trans      &trans  &trans  &trans  &kp G   &kp H   &kp J   &kp K      &kp I    &kp SEMI
+&trans            &trans          &kp Z   &kp X   &kp C   &kp V                   &trans      &trans                  &kp B   &kp N   &kp M   &kp COMMA  &kp DOT  &kp LSHFT
+&none             &trans          &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans     &trans   &trans
             >;
         };
     };
