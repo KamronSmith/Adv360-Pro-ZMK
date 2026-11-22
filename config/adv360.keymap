@@ -11,7 +11,6 @@
 
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 &sk { quick-release; };
@@ -338,31 +337,21 @@
 &kp MINUS       &kp V      &kp M         &kp L       &kp C      &kp P     &kp AT                                                                           &kp AMPERSAND     &kp B      &kp F         &kp O       &kp U          &kp Q          &kp SEMI
 &kp LEFT_ALT    &kp S      &kp T         &kp R       &kp D      &kp Y     &kp LESS_THAN  &kp LEFT_CONTROL  &kp TAB            &quotes     &kp RCTRL        &kp GREATER_THAN  &dot       &kp N         &kp E       &kp A          &kp I          &kp RIGHT_ALT
 &kp LEFT_SHIFT  &kp Z      &kp K         &kp J       &kp G      &kp W                                      &kp PG_UP          &kp ESCAPE                                     &kp X      &kp H         &comma      &exclamation   &question      &kp RIGHT_SHIFT
-&bootloader     &kp F11    &kp LEFT_GUI  &kp LEFT    &kp RIGHT            &kp SPACE      &kp ENTER         &kp PAGE_DOWN      &to 3       &kp RIGHT_SHIFT  &kp BACKSPACE                &kp UP_ARROW  &kp DOWN    &kp RIGHT_GUI  &kp BACKSLASH  &pas3
+&bootloader     &kp F11    &kp LEFT_GUI  &kp LEFT    &kp RIGHT            &kp SPACE      &kp ENTER         &kp PAGE_DOWN      &to 1       &kp RIGHT_SHIFT  &kp BACKSPACE                &kp UP_ARROW  &kp DOWN    &kp RIGHT_GUI  &kp BACKSLASH  &pas3
             >;
         };
 
-        number_pad {
+        qwerty {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none                                  &none   &none  &none   &none       &none   &none      &none
-&none  &none  &none  &none  &none  &none  &none                                  &none   &none  &kp N7  &kp N8      &kp N9  &kp MINUS  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none   &none  &kp N4  &kp N5      &kp N6  &kp PLUS   &none
-&none  &none  &none  &none  &none  &none                &none      &none                 &none  &kp N1  &kp N2      &kp N3  &none      &none
-&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &kp N0         &none   &kp PERIOD  &none   &none      &none
+&dollar    &num_five  &num_five  &num_three  &num_two   &num_one  &carat                                                                         &hash             &num_zero  &num_six  &num_seven  &num_eight  &num_nine  &percent
+&kp MINUS  &kp Q      &kp W      &kp E       &kp R      &kp T     &kp AT_SIGN                                                                    &kp AMPERSAND     &kp Y      &kp U     &kp I       &kp O       &kp P      &trans
+&kp LALT   &kp A      &kp S      &kp D       &kp F      &kp G     &kp LESS_THAN  &kp LCTRL  &kp TAB        &kp DOUBLE_QUOTES  &kp RIGHT_CONTROL  &kp GREATER_THAN  &kp H      &kp J     &kp K       &kp L       &kp SEMI   &kp RALT
+&kp LSHFT  &kp Z      &kp X      &kp C       &kp V      &trans                              &kp PG_UP      &kp ESC                                                 &kp B      &kp N     &kp M       &kp COMMA   &kp DOT    &kp RSHFT
+&trans     &kp F11    &kp LGUI   &kp LEFT    &kp RIGHT            &kp SPACE      &kp RET    &kp PG_DN      &to 2              &Caps              &kp BSPC                     &kp UP    &kp DOWN    &kp LGUI    &kp BSLH   &trans
             >;
         };
 
-        layer_extend {
-            bindings = <
-&bootloader  &none         &none      &bt BT_CLR    &bt BT_PRV     &bt BT_NXT  &none                                  &none      &none           &none      &none         &none      &none          &bootloader
-&none        &none         &none      &kp K_BACK    &kp K_FORWARD  &none       &none                                  &none      &kp HOME        &kp PG_DN  &kp PG_UP     &kp END    &none          &none
-&none        &kp LEFT_ALT  &kp LSHFT  &kp LEFT_GUI  &kp LCTRL      &none       &none  &none  &none      &none  &none  &none      &kp LEFT_ARROW  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &kp BACKSPACE  &none
-&none        &none         &none      &none         &none          &none                     &none      &none                    &none           &none      &none         &none      &none          &none
-&none        &none         &none      &none         &none                      &none  &none  &none      &none  &none  &kp ENTER                  &pas3      &none         &none      &none          &none
-            >;
-        };
-
-        layer_qwerty {
+        layer_gaming {
             bindings = <
 &none             &kp N5          &kp N4  &kp N3  &kp N2  &kp N1  &none                                                                       &none          &kp N0  &kp N6    &kp N7        &kp N8     &kp N9     &kp MINUS
 &kp SINGLE_QUOTE  &none           &kp Q   &kp W   &kp E   &kp R   &none                                                                       &none          &kp T   &kp Y     &kp U         &kp I      &kp O      &kp P
