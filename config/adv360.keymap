@@ -343,11 +343,11 @@
 
         qwerty {
             bindings = <
-&dollar    &num_five  &num_five  &num_three  &num_two   &num_one  &carat                                                                         &hash             &num_zero  &num_six  &num_seven  &num_eight  &num_nine  &percent
-&kp MINUS  &kp Q      &kp W      &kp E       &kp R      &kp T     &kp AT_SIGN                                                                    &kp AMPERSAND     &kp Y      &kp U     &kp I       &kp O       &kp P      &trans
-&kp LALT   &kp A      &kp S      &kp D       &kp F      &kp G     &kp LESS_THAN  &kp LCTRL  &kp TAB        &kp DOUBLE_QUOTES  &kp RIGHT_CONTROL  &kp GREATER_THAN  &kp H      &kp J     &kp K       &kp L       &kp SEMI   &kp RALT
-&kp LSHFT  &kp Z      &kp X      &kp C       &kp V      &trans                              &kp PG_UP      &kp ESC                                                 &kp B      &kp N     &kp M       &kp COMMA   &kp DOT    &kp RSHFT
-&trans     &kp F11    &kp LGUI   &kp LEFT    &kp RIGHT            &kp SPACE      &kp RET    &kp PG_DN      &to 2              &Caps              &kp BSPC                     &kp UP    &kp DOWN    &kp LGUI    &kp BSLH   &trans
+&dollar    &num_five  &num_five  &num_three  &num_two   &num_one  &carat                                                                      &hash             &num_zero  &num_six  &num_seven  &num_eight  &num_nine  &percent
+&kp MINUS  &kp Q      &kp W      &kp E       &kp R      &kp T     &kp AT_SIGN                                                                 &kp AMPERSAND     &kp Y      &kp U     &kp I       &kp O       &kp P      &quotes
+&kp LALT   &kp A      &kp S      &kp D       &kp F      &kp G     &kp LESS_THAN  &kp LCTRL  &kp ESCAPE      &none          &kp RIGHT_CONTROL  &kp GREATER_THAN  &kp H      &kp J     &kp K       &kp L       &kp SEMI   &kp RALT
+&kp LSHFT  &kp Z      &kp X      &kp C       &kp V      &kp B                               &kp TAB         &kp PAGE_UP                                         &kp N      &kp M     &kp COMMA   &kp PERIOD  &kp SLASH  &kp RSHFT
+&trans     &kp F11    &kp LGUI   &kp LEFT    &kp RIGHT            &kp SPACE      &kp RET    &to 1           &kp PAGE_DOWN  &Caps              &kp BSPC                     &kp UP    &kp DOWN    &kp LGUI    &kp BSLH   &trans
             >;
         };
 
